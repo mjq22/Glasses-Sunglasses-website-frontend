@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Visual/Icons/Carousel/Dot/Outlined</title>
+    <defs>
+        <path d="M12,2.4 C17.30176,2.4 21.6,6.69824 21.6,12 C21.6,17.30176 17.30176,21.6 12,21.6 C6.69824,21.6 2.4,17.30176 2.4,12 C2.4,6.69824 6.69824,2.4 12,2.4 Z M12,2.784 C6.9103104,2.784 2.784,6.9103104 2.784,12 C2.784,17.0896896 6.9103104,21.216 12,21.216 C17.0896896,21.216 21.216,17.0896896 21.216,12 C21.216,6.9103104 17.0896896,2.784 12,2.784 Z" id="path-1"></path>
+    </defs>
+    <g id="Visual/Icons/Carousel/Dot/Outlined" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="🎨-Icon-Color" fill="#333333" xlink:href="#path-1"></use>
+    </g>
+</svg>

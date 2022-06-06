@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Listing Page</title>
+    <meta name="description" content="This is the eye glasses website" />
+    <meta name="author" content="Castco" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <a id="skip-content" href="#headerskip" title="Skip to Main Content" class="skip-main"
+            style="display:none;">Skip to Main Content</a>
+        <div class="top-header">
+            <div class="container">
+                <div class="logo-bk">
+                    <a href="/"><img class="main-logo" src="assets/img/logo_CW.svg" alt=" US homepage" /></a>
+                </div>
+                <div class="middle-block">
+                    <a href="#" id="menu-toggle" class="dsHide" aria-label="Toggle navigation">
+                        <img class="menu-toggle" src="assets/icon/navigation-menu.svg" alt="menu icon" />
+                        <span class="menu-txt">Shop</span>
+                    </a>
+                    <form class="search">
+                        <div class="search-wrapper">
+                            <label for="search-field" class="hide">Search</label>
+                            <input type="text" name="s" placeholder="Search" id="search-field" class="search-field" />
+                            <button type="submit" class="search-button" aria-label="submit search">
+                                <img class="search-icon" src="assets/icon/search-icon.svg" alt="submit search" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <nav aria-label="Your Information" class="right-menu-list">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="https://www..com/join-.html" class="menu-item">
+                                <img class="membership-icon icon dsHide" src="assets/icon/-c-solid.svg"
+                                    alt="Membership Icon" />Memberships</a>
+                        </li>
+                        <li class="mbHide tbHide">
+                            <a href="#" class="menu-item not-login">Sign In / Register</a>
+                            <a href="#" class="menu-item login">My Account</a>
+                        </li>
+                        <li>
+                            <span class="favourite-icon">
+                                <a href="#" aria-label="Your Favorites">
+                                    <img class="favourite-icon icon" src="./assets/icon/heart-fill.svg"
+                                        alt="Your Favorites" />
+                                    <span class="dsHide">Favorite</span>
+                                </a>
+                                <span class="count">99</span>
+                            </span>
+                            <span class="menu-cart">
+                                <a href="#">
+                                    <img class="cart-icon icon" src="assets/icon/cart-solid.svg" alt="cart" />
+                                    Cart
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main-menu-wrapper mbHide tbHide">
+            <div class="container">
+                <div class="menu-block">
+                    <nav class="main-menu-nav navbar-nav" aria-label="Main">
+                        <ul class="main-menu">
+                            <li class="dsHide not-login">
+                                <a href="#" class="menu-item">Sign In / Register</a>
+                            </li>
+                            <li class="dsHide login">
+                                <a href="#" class="menu-item">My Account</a>
+                            </li>
+                            <li><a href="#" class="menu-item">Eyeglasses</a></li>
+                            <li><a href="#" class="menu-item">Virtual Try-On</a></li>
+                            <li>
+                                <a href="https://contacts..com/" class="menu-item">Contact Lenses</a>
+                            </li>
+                            <li><a href="#" class="menu-item">Find a Warehouse</a></li>
+                            <li>
+                                <a href="https://www..com/" class="menu-item">.com</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div id="headerskip" class="sr-only" tabindex="-1"></div>
+        <section class="listing-section">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>Eyeglasses</li>
+                    </ul>
+                </nav>
+
+                <div class="product-area">
+                    <div class="row">
+                        <aside class="listing-side col-3 col-md-4">
+                            <div class="filters-area">
+                                <div class="side-title">
+                                    <a id="skip-filters" href="#filterskip" title="Skip to Results" class="skip-main"
+                                        style="display:none;">Skip to Results</a>
+                                    <h2>Filter Results</h2>
+                                    <a href="#" class="clear mbHide">Clear All</a>
+                                    <a href="#" class="filter-close dsHide tbHide">Close Filter</a>
+                                </div>
+                                <div class="filters">
+                                    <!-- Single Filter Widget -->
+                                    <div class="filter-widget active">
+                                        <h3 class="filter-title"><a href="#">Type</a></h3>
+                                        <div class="filter-list">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="eyewear" name="type">
+                                                    <label for="eyewear">Eyewear</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="sunwear" name="type">
+                                                    <label for="sunwear">Sunwear</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Single Filter Widget -->
+                                    <div class="filter-widget active">
+                                        <h3 class="filter-title"><a href="#">Gender</a></h3>
+                                        <div class="filter-list">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="men" name="gender">
+                                                    <label for="men">Men's</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="women" name="gender">
+                                                    <label for="women">Women's</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Single Filter Widget -->
+                                    <div class="filter-widget active">
+                                        <h3 class="filter-title"><a href="#">Color</a></h3>
+                                        <div class="filter-list">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="black" name="color">
+                                                    <label for="black">Black / grey</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="blue" name="color">
+                                                    <label for="blue">Blue</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="brown" name="color">
+                                                    <label for="brown">Brown</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="cream" name="color">
+                                                    <label for="cream">Cream</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="gold" name="color">
+                                                    <label for="gold">Gold</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="green" name="color">
+                                                    <label for="green">Green</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Single Filter Widget -->
+                                    <div class="filter-widget active">
+                                        <h3 class="filter-title"><a href="#">Shape</a></h3>
+                                        <div class="filter-list">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="butterfly" name="shape">
+                                                    <label for="butterfly">Butterfly</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="clubmaster" name="shape">
+                                                    <label for="clubmaster">Clubmaster</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="oval" name="shape">
+                                                    <label for="oval">Oval</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="oversized" name="shape">
+                                                    <label for="oversized">Oversized</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="rectangle" name="shape">
+                                                    <label for="rectangle">Rectangle</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="round" name="shape">
+                                                    <label for="round">Round</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="wayfarer" name="shape">
+                                                    <label for="wayfarer">Wayfarer</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Single Filter Widget -->
+                                    <div class="filter-widget active">
+                                        <h3 class="filter-title"><a href="#">Material</a></h3>
+                                        <div class="filter-list">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="metal" name="material">
+                                                    <label for="metal">Metal</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="plastic" name="material">
+                                                    <label for="plastic">Plastic</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="other" name="material">
+                                                    <label for="other">Other</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Single Filter Widget -->
+                                    <div class="filter-widget active">
+                                        <h3 class="filter-title"><a href="#">Style</a></h3>
+                                        <div class="filter-list">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="universal" name="style">
+                                                    <label for="universal">Universal Fit</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="full-rim" name="style">
+                                                    <label for="full-rim">Full Rim</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="semi-rimless" name="style">
+                                                    <label for="semi-rimless">Semi Rimless</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="aviator" name="style">
+                                                    <label for="aviator">Aviator</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="double-bridge" name="style">
+                                                    <label for="double-bridge">Double Bridge</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="low-bridge" name="style">
+                                                    <label for="low-bridge">Low Bridge</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="modern" name="style">
+                                                    <label for="modern">Modern</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="heavy-plastic" name="style">
+                                                    <label for="heavy-plastic">Heavy Plastic</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="side-foot dsHide tbHide">
+                                    <a href="#" class="clear">Clear All</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="listing-content col-9 col-md-8">
+                            <div id="filterskip" class="sr-only" tabindex="-1"></div>
+                            <h1>Eyeglasses</h1>
+                            <div class="ad-spot">
+                                <div class="ad-desk">
+                                    <img src="assets/img/search-frames-d.jpg" alt="Ad Spot">
+                                    <div class="txt">
+                                        <div class="titles">
+                                            <span class="title">Optical Frames from</span>
+                                            <span class="sub-title">Exclusively for  Members</span>
+                                        </div>
+                                        <span class="price"><span>$</span>59<span>99</span></span>
+                                    </div>
+                                </div>
+                                <div class="ad-mob">
+                                    <img src="assets/img/search-frames-m.jpg" alt="Ad Spot">
+                                    <div class="txt">
+                                        <div class="titles">
+                                            <span class="title">Optical Frames <br> from <span
+                                                    class="price"><span>$</span>59<span>99</span></span></span>
+                                            <span class="sub-title">Exclusively for  Members</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing-top">
+                                <div class="vto">
+                                    <a href="#" class="btn" aria-label="retake try-on" aria-describedby="retake try-on"
+                                        ng-click="retakeVto()">Retake Try-on</a>
+                                    <strong class="txt">Virtual Try-On</strong>
+                                    <div class="vto-toggle">
+                                        <input tabindex="0" role="checkbox" aria-checked="false" type="checkbox"
+                                            name="vto" id="vto">
+                                        <label for="vto"><span>Virtual Try-On</span></label>
+                                    </div>
+
+                                    <a href="#" class="filter-link dsHide tbHide">Filter</a>
+                                </div>
+                                <div class="sort">
+                                    <label for="sort">Sort by:</label>
+                                    <div class="select">
+                                        <select name="sort" id="sort">
+                                            <option value="">Most Popular</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prod-list row">
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav active">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                                <div class="prod-item col-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item-top">
+                                        <span class="badge">For You</span>
+                                        <a href="#" class="fav">Favorite</a>
+                                    </div>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="assets/img/prod1.png" alt="Luxreaders Product Image">
+                                        </a>
+                                    </figure>
+                                    <h2><a href="#">Luxreaders</a></h2>
+                                    <ul class="color-dots">
+                                        <li><button type="button" data-color="brown">Brown</button></li>
+                                        <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                        <li><button type="button" data-color="black">Black</button></li>
+                                        <li><button type="button" data-color="olive">Olive</button></li>
+                                    </ul>
+                                    <span tab-index="0" aria-label="Price $49.99" class="price">$49.99</span>
+                                    <a href="#" class="btn" aria-label="try it on, luxreaders"
+                                        aria-describedby="try it on, luxreaders">Try It On</a>
+                                </div>
+                            </div>
+                            <div class="listing-bottom">
+                                <a href="#" class="link-top"><span>Back to</span> Top</a>
+                                <ul class="pagination" tab-index="0" aria-label="Pagination">
+                                    <li class="prev"><a href="#">Previous</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li>&hellip;</li>
+                                    <li><a href="#">3</a></li>
+                                    <li tabindex="0" class="active"><span>4</span></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>&hellip;</li>
+                                    <li><a href="#">7</a></li>
+                                    <li class="next"><a href="#">Next</a></li>
+                                </ul>
+                            </div>
+                            <span tabindex="0" class="results">Showing 1-18 of 84 results</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://www..com/about.html">About Us</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="http://www..com/membership-information.html">Company Information</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/terms-and-conditions-of-use.html">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://www..com/membership-information.html">Membership</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="http://www..com/join-.html">Join Now</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/member-privileges-conditions.html">Member Privileges</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/privacy-policy.html">Your Privacy Rights</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/DNSMIView">Do Not Sell My Personal Information</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www..com/wcsstore/USBCCatalogAssetStore/rx/pharmacy-privacy-practice.pdf">Privacy
+                            Information</a>
+                    </li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://customerservice..com/">Customer Service</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="https://customerservice..com/app/answers/list/p/281">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="https://customerservice..com/app/answers/detail/a_id/1191">Returns</a>
+                    </li>
+                    <li>
+                        <a href="https://customerservice..com/app/answers/detail/c/10/a_id/9">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="container">
+                <hr />
+                <p class="copyright-text text-center">
+                    © 1998 — 2021  Wholesale Corporation. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

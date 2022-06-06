@@ -1,0 +1,474 @@
+.header-wrapper {
+  .top-header {
+    background-color: $header-bg;
+    padding-top: 48px;
+    padding-bottom: 17px;
+    position: relative;
+    // overflow: hidden;
+    @include Tabbreakpoint($TabletScreen) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    img {
+      width: auto;
+    }
+    .logo-bk {
+      width: 170px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 -4px 0 0;
+      @include Tabbreakpoint($TabletScreen) {
+        display: block;
+        width: 190px;
+        margin:0;
+      }
+      @include breakpoint($MobileScreen) {
+        width: 120px;
+      }
+      .main-logo {
+        @include breakpoint($MobileScreen) {
+          width: 100%;
+        }
+      }
+    }
+
+    .middle-block {
+      display: inline-block;
+      width: calc(100% - 602px);
+      padding: 0px 24px;
+      vertical-align: middle;
+      margin: 0 -4px 0 0;
+
+      @include Tabbreakpoint($TabletScreen) {
+        width: calc(100% - 226px);
+        padding-left: 0;
+        padding-top: 8px;
+        padding-right: 0;
+      }
+      @include breakpoint($MobileScreen) {
+        width: 100%;
+      }
+      #menu-toggle {
+        text-decoration: none;
+        // padding: 0 10px;
+        padding: 8px 10px 7px;
+        // height: 40px;
+        // line-height: 40px;
+        color: #fff;
+        background-color: $PrimaryColor;
+        vertical-align: middle;
+        width: 66px;
+        img {
+          filter: $whiteSvgColor;
+          vertical-align: middle;
+        }
+        .menu-txt{
+          vertical-align: middle;
+        }
+
+        @include Tabbreakpoint($TabletScreen) {
+          display: inline-block;
+          margin: 0 -4px 0 0;
+        }
+        @include breakpoint($smartMobileScreen) {
+          // padding: 0px 10px;
+        }
+      }
+      .search {
+        @include Tabbreakpoint($TabletScreen) {
+          width: calc(100% - 123px);
+          vertical-align: middle;
+          padding: 0px 16px;
+          display: inline-block;
+        }
+        @include breakpoint($MobileScreen) {
+          width: calc(100% - 92px);
+          padding: 0 0 0 5px;
+        }
+        .search-wrapper {
+          position: relative;
+        }
+        .search-field {
+          width: 100%;
+          background-color: #fff;
+          padding: 10px;
+          vertical-align: bottom;
+          display: inline-block;
+          padding-right: 32px;
+          box-sizing: border-box;
+          border: 1px solid $PrimaryColor;
+          height: 38.95px;
+
+          &:focus{
+            box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+            outline: none;
+          }
+          // color: #fff;
+          &::placeholder {
+            color: $PrimaryTextColor;
+          }
+
+          @include Tabbreakpoint($TabletScreen) {
+            height: 40px;
+          }
+        }
+
+        .search-button {
+          position: absolute;
+          top: 1px;
+          right: 0;
+          background-color: transparent;
+          border: 0;
+          height: 40px;
+          padding: 5px;
+          cursor: pointer;
+          @include breakpoint($MobileScreen) {
+            position: absolute;
+            top: 0px;
+            right: 1px;
+            background-color: transparent;
+            border: 0;
+            padding: 7px 5px;
+          }
+        }
+        .sugg-typed{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 8px 11px 12px;
+          color: $PrimaryTextColor;
+          height: 38px;
+          pointer-events: none;
+          z-index: 1;
+          box-sizing: border-box;
+        }
+        .sugg-place{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: calc(100% - 40px); 
+          box-shadow: rgba(102, 175, 233, 0.6) 0px 0px 8px;
+          padding: 8px 11px 12px;
+          color: #ccc;
+          height: 38px;
+          pointer-events: none;
+          // z-index: -1;
+          box-sizing: border-box;
+        }
+        .sugg-box{
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: calc(100% - 40px);
+          box-sizing: border-box;
+          margin: 0;
+          padding: 10px 0;
+          list-style: none;
+          z-index: 999;
+          background: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) ;
+
+          li{
+            overflow: hidden;
+            padding: 0 10px;
+            cursor: pointer;
+
+            &:focus{
+              // background: #eff7fb;
+              background: #ddd;
+              outline: none;
+            }
+
+            &.suggestion-item{
+              &.first{
+                border-top: 1px solid #ddd;
+                margin-top: 8px;
+
+                @include Tabbreakpoint($TabletScreen) {padding-top: 8px; }
+              }
+            }
+
+            img{
+              display: inline-block;
+              vertical-align: middle;
+              width: 120px;
+              padding: 0 20px 0 0;
+
+              @include Tabbreakpoint($TabletScreen) { display: none; }
+            }
+
+            span.title{
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .right-menu-list {
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      margin: 0 -4px 0 0;
+      vertical-align: middle;
+      width: auto;
+      text-align: right;
+      @include Tabbreakpoint($TabletScreen) {
+        width: auto;
+        padding: 8px 0 0;
+      }
+      @include breakpoint($MobileScreen) {
+        position: absolute;
+        top: 3px;
+        right: 16px;
+        padding: 0 0 0 8px;
+        margin:0;
+      }
+      li {
+        display: table-cell;
+        padding: 0px 16px;
+        border-right: 1px solid #9c9c9c;
+        vertical-align: middle;
+        @include Tabbreakpoint($TabletScreen) {
+          padding: 0px 10px;
+          vertical-align: bottom;
+          line-height: 20px;
+        }
+        @include breakpoint($MobileScreen) {
+          padding: 0px 8px;
+          vertical-align: middle;
+          line-height: 12px;
+        }
+        &:first-child {
+          padding-left: 0px;
+        }
+        &:last-child {
+          border: none;
+          padding-right: 0px;
+        }
+        &.mbHide {
+          @include breakpoint($MobileScreen) {
+            display: none;
+          }
+        }
+        &.tbHide {
+          @include Tabbreakpoint($TabletScreen) {
+            display: none;
+          }
+        }
+        .menu-item {
+          font-size: $primaryFontsize;
+          color: #0060A9;
+          text-decoration: none;
+          line-height: 24px;
+          display: inline-block;
+          @include Tabbreakpoint($TabletScreen) {
+            line-height: 20px;
+          }
+          @include breakpoint($MobileScreen) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+          &:focus {
+            text-decoration: underline;
+          }
+          &.login {
+            display: none;
+          }
+        }
+        img {
+          width: auto;
+        }
+        .icon {
+          filter: $IconSvgColor;
+          position: relative;
+          @include Tabbreakpoint($TabletScreen) {
+            display: block !important;
+            margin: 0px auto;
+            width: 22px;
+            height: 22px;
+          }
+        }
+        > span {
+          display: table-cell;
+          vertical-align: middle;
+          @include Tabbreakpoint($TabletScreen) {
+            padding: 0px 10px;
+          }
+          @include breakpoint($MobileScreen) {
+            padding: 0px 8px;
+            line-height: 12px;
+          }
+          &:last-child {
+            @include Tabbreakpoint($TabletScreen) {
+              padding-right: 0px;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: #0060A9;
+            display: block;
+            &:hover {
+              text-decoration: underline;
+            }
+            &:focus {
+              text-decoration: underline;
+            }
+            .cart-icon {
+              vertical-align: middle;
+              width: 28px;
+              height: auto;
+
+              @include breakpoint($MobileScreen) { width: 26px; }
+            }
+            @include breakpoint($MobileScreen) {
+              font-size: 10px;
+              line-height: 12px;
+              display: block;
+              text-align: center;
+            }
+          }
+          &.favourite-icon {
+            width: 22px;
+            // height: 22px;
+            padding-right: 16px;
+            padding-top: 6px;
+            position: relative;
+            // top: calc(50% - 24px / 2 + 1px);
+            @include Tabbreakpoint($TabletScreen) {
+              width: auto;
+              height: auto;
+              padding-left: 0px;
+              padding-right: 10px;
+              border-right: 1px solid #9c9c9c;
+              top: 0px;
+            }
+            @include breakpoint($MobileScreen) {
+              padding-right: 8px;
+              padding-top: 0;
+            }
+            img.favourite-icon {
+              @include Tabbreakpoint($TabletScreen) {
+                width: 22px;
+                height: 22px;
+              }
+            }
+            .count {
+              position: absolute;
+              top: 2px;
+              border: 1px solid $PrimaryColor;
+              font-size: 10px;
+              border-radius: 50%;
+              width: 16px;
+              height: 16px;
+              line-height: 16px;
+              color: $PrimaryColor;
+              text-align: center;
+              z-index: 2;
+              background-color: #fff;
+              font-weight: 700;
+              right: 8px;
+              @include Tabbreakpoint($TabletScreen) {
+                top: 3px;
+                right: 20px;
+              }
+              @include breakpoint($MobileScreen) {
+                right: 8px;
+              }
+            }
+          }
+          &:last-child {
+            @include Tabbreakpoint($TabletScreen) {
+              padding-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-menu-wrapper {
+    background-color: $PrimaryColor;
+    width: 100%;
+    display: block;
+    @include Tabbreakpoint($TabletScreen) {
+      background-color: #fff;
+      width: calc(100% - 32px);
+      margin: 0px auto;
+      box-shadow: 1px 1px 6px #0000004d;
+      margin-bottom: 25px;
+      display: none;
+      max-width: 290px;
+      position: absolute;
+      left: 16px;
+      z-index: 9;
+    }
+    .menu-block{ padding: 0; }
+    .main-menu-nav {
+      .main-menu {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li {
+          display: inline-block;
+          @include Tabbreakpoint($TabletScreen) {
+            width: 100%;
+          }
+          .menu-item {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 14px;
+
+            &:focus{
+              // border:none;
+              // outline: 2px solid #e51937;
+              // box-shadow: none;
+            }
+
+            @include Tabbreakpoint($TabletScreen) {
+              color: #000;
+              height: 40px;
+              line-height: 40px;
+              font-size: 14px;
+              padding: 0px 4px;
+            }
+          }
+
+          &:first-child {
+            .menu-item {
+              padding-left: 0px;
+              @include Tabbreakpoint($TabletScreen) {
+                padding-left: 4px;
+              }
+            }
+          }
+          &:nth-child(3) {
+            .menu-item {
+              padding-left: 0px;
+              @include Tabbreakpoint($TabletScreen) {
+                padding-left: 4px;
+              }
+            }
+          }
+          &.dsHide {
+            display: none;
+            @include Tabbreakpoint($TabletScreen) {
+              display: block;
+            }
+          }
+          &.login {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

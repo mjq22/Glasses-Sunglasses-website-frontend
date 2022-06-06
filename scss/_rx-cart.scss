@@ -1,0 +1,182 @@
+//Cart
+.cart{
+    .rx-content{
+        @include breakpoint($MobileScreen) {
+            padding: 0;
+        }
+        .rx-content-inner{
+            @include breakpoint($MobileScreen) {
+                padding: 33px 16px 32px 16px;
+                min-height: 300px;
+            }
+        }
+        .add-cart-section{
+            border: 1px solid #e5e5e5;
+            border-radius: 3px;
+            padding: 24px 25px;
+            margin-top: 22px;
+            @include breakpoint($MobileScreen) {
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            .subtotal-final{
+                margin:0 0 7px;
+                overflow: hidden;
+            }
+            .subtotal-heading {
+                width: 50%;
+                float: left;
+                strong {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #333;
+                }
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #707070;
+                    display: block;
+                }
+            }
+            .subtotal-price {
+                float: left;
+                width: 50%;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: right;
+                color: #333;
+            }
+        }
+        .btn{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            padding: 6px 24px;
+            height: 40px;
+            background: #3071a9;
+            border-radius: 3px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            &:hover {
+                background-color: #296293;
+            }
+        }
+    }
+
+    .rx-side{
+        padding: 31px 49px 50px 74px;
+        @include Tabbreakpoint($TabletScreen) {
+            padding: 20px;
+        }
+        @include breakpoint($MobileScreen) {
+            padding: 29px 20px 15px 20px;
+        }
+        .pat-name{
+            @include breakpoint($MobileScreen) {
+                margin-top: 11px;
+            } 
+        }
+        .image-container {
+            max-width: 232px;
+            margin: 0 auto 19px;
+            @include breakpoint($smartMobileScreen) {
+                max-width: 204px;
+                margin: 0 auto 16px;
+             }
+            img{
+                width: auto;
+                display: block;
+            }
+        }
+        .mobile-section-drawer {
+            padding: 50px 33px 20px 35px;
+            @include breakpoint($MobileScreen) { 
+                padding: 0;
+                &.opened{
+                    padding: 24px 16px 0;
+                }
+            }
+        }
+    }
+}
+
+.container-cart{
+    max-width: 600px;
+    margin: 53px auto 112px;
+    text-align: center;
+    box-sizing: border-box;
+    @include breakpoint($MobileScreen)  {
+        margin: 31px auto 52px;
+    }
+    .cart-text-wrapper{
+        margin: 0 0 33px;
+        padding: 0 16px;
+        @include breakpoint($MobileScreen)  {
+            margin: 0 0 61px;
+        }
+    }
+    h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: #000000;
+        margin: 0 0 5px;
+        @include breakpoint($MobileScreen)  {
+            margin: 0 0 20px;
+        }
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #333333;
+    }
+    .btn-holder{
+        padding-top: 26px;
+        @include breakpoint($MobileScreen)  {
+            padding-top: 24px;
+        }
+        .btn{
+            display: block;
+            max-width: 304px;
+            width: 100%;
+            margin: 0 auto;
+            cursor: pointer;
+            margin-bottom: 16px;
+            &.fill-btn{
+                border: none;
+            }
+            &.outline-btn{
+                background: #FAFAFA;
+            }
+        }
+    }
+    .promotion-banner{
+        img{
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .promotion-notice{
+            display: none;
+            padding: 7px 16px 15px;
+            @include breakpoint($MobileScreen)  {
+                display: block;
+            }
+            p{
+                line-height: 21px;
+                color: #707070;
+                font-style: italic;
+                text-align: left;
+            }
+        }
+    }
+}

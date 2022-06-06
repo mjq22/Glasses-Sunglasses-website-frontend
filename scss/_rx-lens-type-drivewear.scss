@@ -1,0 +1,18 @@
+.more-selection{
+    h2{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: #333333;
+        margin-bottom: 24px;
+        @include breakpoint($smartMobileScreen) {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+    }
+}
+#drivewear-detail p {
+    margin: 0 0 12px;
+}

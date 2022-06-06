@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Order Detail Page</title>
+    <meta name="description" content="This is the eye glasses website" />
+    <meta name="author" content="Castco" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <a id="skip-content" href="#headerskip" title="Skip to Main Content" class="skip-main"
+            style="display:none;">Skip to Main Content</a>
+        <div class="top-header">
+            <div class="container">
+                <div class="logo-bk">
+                    <a href="/"><img class="main-logo" src="assets/img/logo_CW.svg" alt=" US homepage" /></a>
+                </div>
+                <div class="middle-block">
+                    <a href="#" id="menu-toggle" class="dsHide" aria-label="Toggle navigation">
+                        <img class="menu-toggle" src="assets/icon/navigation-menu.svg" alt="menu icon" />
+                        <span class="menu-txt">Shop</span>
+                    </a>
+                    <form class="search">
+                        <div class="search-wrapper">
+                            <label for="search-field" class="hide">Search</label>
+                            <input type="text" name="s" placeholder="Search" id="search-field" class="search-field" />
+                            <button type="submit" class="search-button" aria-label="submit search">
+                                <img class="search-icon" src="assets/icon/search-icon.svg" alt="submit search" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <nav aria-label="Your Information" class="right-menu-list">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="https://www..com/join-.html" class="menu-item">
+                                <img class="membership-icon icon dsHide" src="assets/icon/-c-solid.svg"
+                                    alt="Membership Icon" />Memberships</a>
+                        </li>
+                        <li class="mbHide tbHide">
+                            <a href="#" class="menu-item not-login">Sign In / Register</a>
+                            <a href="#" class="menu-item login">My Account</a>
+                        </li>
+                        <li>
+                            <span class="favourite-icon">
+                                <a href="#" aria-label="Your Favorites">
+                                    <img class="favourite-icon icon" src="assets/icon/heart-fill.svg"
+                                        alt="Your Favorites" />
+                                    <span class="dsHide">Favorite</span>
+                                </a>
+                                <span class="count">99</span>
+                            </span>
+                            <span class="menu-cart">
+                                <a href="#">
+                                    <img class="cart-icon icon" src="assets/icon/cart-solid.svg" alt="cart" />
+                                    Cart
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main-menu-wrapper mbHide tbHide">
+            <div class="container">
+                <div class="menu-block">
+                    <nav class="main-menu-nav navbar-nav" aria-label="Main">
+                        <ul class="main-menu">
+                            <li class="dsHide not-login">
+                                <a href="#" class="menu-item">Sign In / Register</a>
+                            </li>
+                            <li class="dsHide login">
+                                <a href="#" class="menu-item">My Account</a>
+                            </li>
+                            <li><a href="#" class="menu-item">Eyeglasses</a></li>
+                            <li><a href="#" class="menu-item">Virtual Try-On</a></li>
+                            <li>
+                                <a href="https://contacts..com/" class="menu-item">Contact Lenses</a>
+                            </li>
+                            <li><a href="#" class="menu-item">Find a Warehouse</a></li>
+                            <li>
+                                <a href="https://www..com/" class="menu-item">.com</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div id="headerskip" class="sr-only" tabindex="-1"></div>
+        <section class="order-section order-detail">
+            <div class="container">
+                <nav class="breadcrumbs" aria-labelledby="breadcrumb">
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li>Order Number {Order Number}</li>
+                    </ul>
+                </nav>
+                <h1 role="heading" aria-labelledby="Order Number: {Order Number}" aria-level='1'>Order Number: {Order
+                    Number}
+                </h1>
+                <div class="order-info order-box">
+                    <h2>Order Details</h2>
+                    <ul class="info-list">
+                        <li>Order Number: {Order Number}</li>
+                        <li>Status: {Status}</li>
+                        <li>Order Date: {Order Date}</li>
+                    </ul>
+                </div>
+                <div class="order-box">
+                    <h2>Items Ordered</h2>
+                    <div class="order-msg msg-warn">
+                        <p>Item(s) in this order require a <strong>prescription</strong> and/or <strong>pupillary
+                                distance</strong> to be processed. </p>
+                    </div>
+                    <article class="order-item">
+                        <span class="offscreen" id="frame1">frame 1</span>
+                        <div class="item-info">
+                            <figure>
+                                <!-- <div class="img-holder">
+                                    <img src="/assets/img/detail-frame.png" alt="">
+                                </div> -->
+                            </figure>
+                            <div class="frame-info">
+                                <span class="frame-name"><a href="#">Frame Name</a></span>
+                                <span class="frame-color">Frame Color: {Color}</span>
+                                <span class="frame-lens">Lens: {Lens}</span>
+                                <span class="add-on">{Add-on}</span>
+                            </div>
+                        </div>
+                        <div class="presc-info">
+                            <div class="presc-detail">
+                                <h3>Prescription</h3>
+                                <a href="#" aria-describedby="frame1" class="choose-presc popup-link"
+                                    data-popup="choose-rx-popup">Choose a
+                                    prescription</a>
+                            </div>
+                            <div class="pd-detail">
+                                <h3>Pupillary Distance</h3>
+                                <form action="">
+                                    <fieldset>
+                                        <div class="field pd-single">
+                                            <div class="select">
+                                                <select name="" id="choose-pd">
+                                                    <option value="">PD</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </div>
+                                            <span class="error-msg">Incorrect entry.</span>
+                                        </div>
+                                        <div class="pd-both" style="display: none;">
+                                            <div class="field pd-right">
+                                                <div class="select">
+                                                    <select name="" id="right-pd">
+                                                        <option value="">Right PD</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <span class="error-msg">Incorrect entry.</span>
+                                            </div>
+                                            <div class="field pd-left">
+                                                <div class="select">
+                                                    <select name="" id="left-pd">
+                                                        <option value="">Left PD</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <span class="error-msg">Incorrect entry.</span>
+                                            </div>
+                                        </div>
+                                        <div class="field pd-check">
+                                            <div class="checkbox-field">
+                                                <input type="checkbox" name="pd-both" id="pd-both">
+                                                <label for="pd-both">Use Two PD Numbers</label>
+                                            </div>
+                                        </div>
+                                        <a class="measure-pd-link" href="#">Measure my PD using our virtual measurement
+                                            tool </a>
+                                        <input type="submit" aria-describedby="frame1" value="Save">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="order-item">
+                        <span class="offscreen" id="frame2">frame 2</span>
+                        <div class="item-info">
+                            <figure>
+                                <!-- <div class="img-holder">
+                                    <img src="/assets/img/detail-frame.png" alt="">
+                                </div> -->
+                            </figure>
+                            <div class="frame-info">
+                                <span class="frame-name"><a href="#">Frame Name</a></span>
+                                <span class="frame-color">Frame Color: {Color}</span>
+                                <span class="frame-lens">Lens: {Lens}</span>
+                                <span class="add-on">{Add-on}</span>
+                            </div>
+                        </div>
+                        <div class="presc-info">
+                            <div class="presc-detail">
+                                <h3>Prescription</h3>
+                                <span class="view-presc">
+                                    Pending validation
+                                    <a class="popup-link" aria-describedby="frame2" data-popup="view-rx-popup2"
+                                        href="#">View prescription</a>
+                                </span>
+                            </div>
+                            <div class="pd-detail">
+                                <h3>Pupillary Distance</h3>
+                                <span class="pd-val">56</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="order-item">
+                        <span class="offscreen" id="frame3">frame 3</span>
+                        <div class="item-info">
+                            <figure>
+                                <!-- <div class="img-holder">
+                                    <img src="/assets/img/detail-frame.png" alt="">
+                                </div> -->
+                            </figure>
+                            <div class="frame-info">
+                                <span class="frame-name"><a href="#">Frame Name</a></span>
+                                <span class="frame-color">Frame Color: {Color}</span>
+                                <span class="frame-lens">Lens: {Lens}</span>
+                                <span class="add-on">{Add-on}</span>
+                                <span class="ship-status">Product Shipped on {Date}</span>
+                            </div>
+                        </div>
+                        <div class="presc-info">
+                            <p>Non-prescription / non-powered lens item</p>
+                        </div>
+                    </article>
+                    <article class="order-item">
+                        <span class="offscreen" id="frame4">frame 4</span>
+                        <div class="item-info">
+                            <figure>
+                                <!-- <div class="img-holder">
+                                    <img src="/assets/img/detail-frame.png" alt="">
+                                </div> -->
+                            </figure>
+                            <div class="frame-info">
+                                <span class="frame-name"><a href="#">Frame Name</a></span>
+                                <span class="frame-color">Frame Color: {Color}</span>
+                                <span class="frame-lens">Lens: {Lens}</span>
+                                <span class="add-on">{Add-on}</span>
+                                <span class="ship-status">Preparing to Ship</span>
+                            </div>
+                        </div>
+                        <div class="presc-info">
+                            <div class="presc-detail">
+                                <h3>Prescription</h3>
+                                <span class="view-presc">
+                                    Verified.
+                                    <a href="#" aria-describedby="frame4" class="popup-link"
+                                        data-popup="view-rx-popup">View prescription</a>
+                                </span>
+                            </div>
+                            <div class="pd-detail">
+                                <h3>Pupillary Distance</h3>
+                                <span class="pd-val">R:28, L:28</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://www..com/about.html">About Us</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="http://www..com/membership-information.html">Company Information</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/terms-and-conditions-of-use.html">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://www..com/membership-information.html">Membership</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="http://www..com/join-.html">Join Now</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/member-privileges-conditions.html">Member Privileges</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/privacy-policy.html">Your Privacy Rights</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/DNSMIView">Do Not Sell My Personal Information</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www..com/wcsstore/USBCCatalogAssetStore/rx/pharmacy-privacy-practice.pdf">Privacy
+                            Information</a>
+                    </li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://customerservice..com/">Customer Service</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="https://customerservice..com/app/answers/list/p/281">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="https://customerservice..com/app/answers/detail/a_id/1191">Returns</a>
+                    </li>
+                    <li>
+                        <a href="https://customerservice..com/app/answers/detail/c/10/a_id/9">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="container">
+                <hr />
+                <p class="copyright-text text-center">
+                    © 1998 — 2021  Wholesale Corporation. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="popup view-rx-popup rx-popup" id="view-rx-popup" tabindex="-1">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>{Name}'s Prescription</h3>
+                <a href="#" class="popup-close">close</a>
+            </div>
+            <div class="content-holder">
+                <div class="presc-details">
+                    <div class="presc-info">
+                        <span class="title" id="view-rx2-title">{Name}'s Prescription</span>
+                        <ul>
+                            <li>
+                                <span class="info-title">Exam Date:</span>
+                                <span class="info-val">{Date}</span>
+                            </li>
+                            <li>
+                                <span class="info-title">Expiration:</span>
+                                <span class="info-val">{Date}</span>
+                            </li>
+                            <li>
+                                <span class="info-title">Doctor Name:</span>
+                                <span class="info-val">{Date}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <figure><img src="/assets/img/presc-img.jpg" alt="Uploaded prescription"
+                            aria-labelledby="view-rx2-title"></figure>
+                </div>
+                <table class="presc-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Eye</th>
+                            <th scope="col">Sph</th>
+                            <th scope="col">Cyl</th>
+                            <th scope="col">Axis</th>
+                            <th scope="col">Add</th>
+                            <th scope="col">Prism <span>Vertical</span></th>
+                            <th scope="col">Prism <span>Horizontal</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Right (OD)</td>
+                            <td>-4.25</td>
+                            <td>-2.50</td>
+                            <td>090</td>
+                            <td>+2.00</td>
+                            <td class="prism-val">2.50 U</td>
+                            <td class="prism-val">2.00 D</td>
+                        </tr>
+                        <tr>
+                            <td>Left (OS)</td>
+                            <td>-4.00</td>
+                            <td>-1.50</td>
+                            <td>090</td>
+                            <td>+2.00</td>
+                            <td class="prism-val">2.50 O</td>
+                            <td class="prism-val">2.00 I</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <div role="table" aria-labelledby="presc-table1">
+                    <div role="rowgroup" aria-label="Table Header" aria-level="1" tabindex="-1">
+                        <div role="row">
+                            <span role="columnheader" aria-sort="none">Eye</span>
+                            <span role="columnheader" aria-sort="none">Sph</span>
+                            <span role="columnheader" aria-sort="none">Cyl</span>
+                            <span role="columnheader" aria-sort="none">Axis</span>
+                            <span role="columnheader" aria-sort="none">Add</span>
+                            <span role="columnheader" aria-sort="none">Prism <span>Vertical</span></span>
+                            <span role="columnheader" aria-sort="none">Prism <span>Horizontal</span></span>
+                        </div>
+                    </div>
+                    <div role="rowgroup">
+                        <div role="row">
+                            <span role="cell">Right (OD)</span>
+                            <span role="cell">-4.25</span>
+                            <span role="cell">-2.50</span>
+                            <span role="cell">090</span>
+                            <span role="cell">+2.00</span>
+                            <span role="cell" class="prism-val">2.50 U</span>
+                            <span role="cell" class="prism-val">2.00 D</span>
+                        </div>
+                        <div role="row">
+                            <span role="cell">Left (OS)</span>
+                            <span role="cell">-4.00</span>
+                            <span role="cell">-1.50</span>
+                            <span role="cell">090</span>
+                            <span role="cell">+2.00</span>
+                            <span role="cell" class="prism-val">2.50 O</span>
+                            <span role="cell" class="prism-val">2.00 I</span>
+                        </div>
+                    </div>
+                    <div id="presc-table1">Table with 3 rows, 7 columns</div>
+                </div>-->
+            </div>
+            <div class="popup-footer">
+                <a href="#" class="btn btn-close">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup view-rx-popup rx-popup" id="view-rx-popup2" tabindex="-1">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>{Name}'s Prescription</h3>
+                <a href="#" class="popup-close">close</a>
+            </div>
+            <div class="content-holder">
+                <div class="presc-details">
+                    <div class="presc-info">
+                        <span class="title" id="view-rx1-title">{Name}'s Prescription</span>
+                        <span class="title">Pending Status:</span>
+                        <ul>
+                            <li>
+                                <span class="info-val">Pending verification</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <figure><img src="/assets/img/presc-img.jpg" alt="Uploaded prescription"
+                            aria-labelledby="view-rx1-title"></figure>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <a href="#" class="btn btn-close">Close</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup view-rx-popup rx-popup" id="choose-rx-popup" tabindex="-1">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Choose a Prescription</h3>
+                <a href="#" class="popup-close">close</a>
+            </div>
+            <div class="content-holder">
+                <div class="rx-top">
+                    <div class="rx-details">
+                        <span class="title">Existing Prescriptions:</span>
+                        <button type="button" aria-label="add new prescription, opens modal" class="add-new-rx">Add New
+                            Prescription</button>
+                    </div>
+                    <p>Expired prescriptions are not shown</p>
+                </div>
+                <article class="rx-item">
+                    <div class="presc-details">
+                        <div class="presc-info">
+                            <span class="title" id="rx1-title">{Name}'s Prescription</span>
+                            <ul>
+                                <li>
+                                    <span class="info-title">Exam Date:</span>
+                                    <span class="info-val">{Date}</span>
+                                </li>
+                                <li>
+                                    <span class="info-title">Expiration:</span>
+                                    <span class="info-val">{Date}</span>
+                                </li>
+                                <li>
+                                    <span class="info-title">Doctor Name:</span>
+                                    <span class="info-val">{Date}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <figure><img src="/assets/img/presc-img.jpg" alt="Uploaded prescription"
+                                aria-labelledby="rx1-title"></figure>
+                    </div>
+                    <table class="presc-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Eye</th>
+                                <th scope="col">Sph</th>
+                                <th scope="col">Cyl</th>
+                                <th scope="col">Axis</th>
+                                <th scope="col">Add</th>
+                                <th scope="col">Prism <span>Vertical</span></th>
+                                <th scope="col">Prism <span>Horizontal</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Right (OD)</td>
+                                <td>-4.25</td>
+                                <td>-2.50</td>
+                                <td>090</td>
+                                <td>+2.00</td>
+                                <td class="prism-val">2.50 U</td>
+                                <td class="prism-val">2.00 D</td>
+                            </tr>
+                            <tr>
+                                <td>Left (OS)</td>
+                                <td>-4.00</td>
+                                <td>-1.50</td>
+                                <td>090</td>
+                                <td>+2.00</td>
+                                <td class="prism-val">2.50 O</td>
+                                <td class="prism-val">2.00 I</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="select-presc"
+                        aria-label="Select Prescription {Name}'s prescription, {Exam date}">Select Prescription</a>
+                </article>
+                <article class="rx-item">
+                    <div class="presc-details">
+                        <div class="presc-info">
+                            <span class="title" id="rx2-title">{Name}'s Prescription</span>
+                            <span class="title">Pending Status:</span>
+                            <ul>
+                                <li>
+                                    <span class="info-val">Pending verification</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <figure><img src="/assets/img/presc-img.jpg" alt="Uploaded prescription"
+                                aria-labelledby="rx2-title"></figure>
+                    </div>
+                    <a href="#" class="select-presc"
+                        aria-label="Select Prescription {Name}'s prescription, {Exam date}">Select Prescription</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="popup view-rx-popup rx-popup" id="choose-rx-popup" style="display: block;" tabindex="-1">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Choose a Prescription</h3>
+                <a href="#" class="popup-close">close</a>
+            </div>
+            <div class="content-holder">
+                <div class="rx-top">
+                    <div class="rx-details">
+                        <span class="title">Existing Prescriptions:</span>
+                        <button type="button" aria-label="add new prescription, opens modal" class="add-new-rx">Add New
+                            Prescription</button>
+                    </div>
+                    <p>Expired prescriptions are not shown</p>
+                </div>
+                <div class="no-rx">
+                    <p>You have no existing prescriptions stored on  Optical online. Add a new prescription
+                        now to
+                        begin using it for your orders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

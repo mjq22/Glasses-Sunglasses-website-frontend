@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Order Detail Page</title>
+    <meta name="description" content="This is the eye glasses website" />
+    <meta name="author" content="Castco" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+</head>
+
+<body>
+    <header class="rx-header-wrapper">
+        <div id="headerskip" class="sr-only" tabindex="-1"></div> 
+        <div class="rx-container">
+            <div class="rx-back-button">
+                <button class="btn-back"> Back to product page</button>
+            </div>
+            <div class="rx-logo">
+                <div class="logo-bk">
+                    <a href="/"><img class="main-logo" src="assets/img/logo_CW.svg" alt=" US homepage"></a>
+                </div>
+            </div>
+            <div class="rx-empty"></div>
+        </div>
+    </header>
+    <div class="rx-container-inner">
+        <div class="rx-content">
+            <nav class="steps-selection">
+                <button class="step-btn previous-btn" disabled>previous step</button>
+                <ol>
+                    <li><a href="#" class="checked"><em></em><span>Vision</span></a></li>
+                    <li><a href="#" class="checked"><em></em><span>Prescription</span></a></li>
+                    <li><a href="#" class="checked"><em></em><span>Type</span></a></li>
+                    <li><a href="#" aria-current="step"><em></em><span>Material</span></a></li>
+                </ol>
+                <button class="step-btn next-btn">next step</button>
+            </nav>
+            <div class="rx-content-inner lens-type">
+                <div class="heading-area">
+                    <h1>Select your lens type</h1>
+                </div>
+                <form action="#">
+                    <fieldset>
+                        <legend class="sr-only">Select your lens type</legend>
+                        <div class="selection-wrapper">
+                            <div class="selection-style">
+                                <div class="selection-style-wrapper">
+                                    <div class="selection-inner">
+                                        <div class="selection-item">    
+                                            <input checked type="radio" id="material-tl" name="material" aria-describedby="material-tl-price material-tl-detail">
+                                            <label for="material-tl"><span>Thin & Light</span></label>
+                                        </div>
+                                        <div class="selection-price"><span id="material-tl-price">Included</span></div>
+                                    </div>
+                                    
+                                    <div class="selection-detail" id="material-tl-detail">  
+                                        <p><strong>Hi Index 1.60</strong> for Clear and Transition Lenses or <strong></strong>Polycarbonate</strong> for Polarized and Drivewear. Impact resistance with Anti Reflective Treatment, Scratch Resistant and UV filter.</p>
+                                        <p>Blue light filter as standard, blocks harmful rays emitted from  electronic devices and fluorescent lighting.</p>                         
+                                    </div>
+                                </div>
+                                
+                                <div class="more-selection">
+                                    <h2>Upgrade your lenses (Optional)</h2>
+                                    <div class="selection-style-wrapper">
+                                        <div class="selection-inner">
+                                            <div class="selection-item">  
+                                                <input type="radio" id="material-stl" name="material" aria-describedby="material-stl-price material-stl-detail">
+                                                <label for="material-stl"><span>Super Thin & Light</span></label>
+                                            </div>
+                                            <div class="selection-price"><span id="material-stl-price">From $20</span></div>
+                                        </div>
+                                        <div class="selection-detail" id="material-stl-detail">
+                                            <p><strong>Hi Index 1.67 Aspheric Lens</strong> material for High powered prescriptions (>-6.00 or >+3.00 sphere and >1.50 Cylinder).</p>
+                                            <p>Also includes Anti-Reflective Treatment with blue light filter to ease eye fatigue associated with electronic devices and fluorescent lighting; Scratch Resistant Treatment and UV filter. </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="selection-style-wrapper">
+                                        <div class="selection-inner">
+                                            <div class="selection-item">  
+                                                <input type="checkbox" id="edge-polish" name="material-more" aria-describedby="edge-polish-price edge-polish-detail">
+                                                <label for="edge-polish"><span>Edge Polish</span></label>
+                                            </div>
+                                            <div class="selection-price"><span id="edge-polish-price">$9.99</span></div>
+                                        </div>
+                                        <div class="selection-detail">
+                                            <p id="edge-polish-detail"><strong>Edge Polish,</strong> when combined with a high minus (>-6.00) prescription and a thin frame style, can help make lens thickness less noticeable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="btn fill-btn" type="submit" value="Continue">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="rx-side">
+            <div class="image-container">
+                <img src="assets/img/rx-frame-image.png" alt="Camilla Rossa">
+            </div>
+            <h2 class="frame-title">Camilla Rossa</h2>
+            <h3 class="frame-color">Brown tortoise - Medium</h3>
+            <div class="mobile-section-drawer">
+                <button aria-label="order summary details" aria-expanded="false"></button>
+                <div class="mobile-section-drawer-container">
+                    <h2>Order Summary</h2>
+                    <h3>(Frame + Lenses)</h3>
+                    <ul class="rx-selection-detail">
+                        <li class="frame-area">
+                            <div class="selection-item">
+                                <div class="selection-container">
+                                    <div class="selection-label">
+                                        <h4 class="selection-heading">Frame</h4>
+                                    </div> 
+                                    <div class="selection-value">
+                                        $59.99
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="selection-item">
+                                <h4 class="selection-heading">Vision type</h4>
+                                <div class="selection-container">
+                                    <span class="selection-label">
+                                        Dinstance
+                                    </span> 
+                                    <span class="selection-value">
+                                        $59.99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="selection-item">
+                                <h4 class="selection-heading">Lens type</h4>
+                                <div class="selection-container">
+                                    <span class="selection-label">
+                                        Polarized lenses
+                                    </span> 
+                                    <span class="selection-value">
+                                        +$10.00
+                                    </span>
+                                </div>
+                                <div class="selection-container">
+                                    <span class="selection-label">
+                                        Standard Polarized - Green
+                                    </span> 
+                                    <span class="selection-value">
+                                        Free
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-total-area">
+                            <div class="subtotal-heading">
+                                <strong>Subtotal</strong>
+                                <span>(Frame + Lenses)</span>
+                            </div>
+                            <div class="subtotal-price">$240.00</div> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-total-drawer">
+                    <strong>Subtotal</strong>
+                    <span>$240.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

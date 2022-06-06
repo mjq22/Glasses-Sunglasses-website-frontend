@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Order Detail Page</title>
+    <meta name="description" content="This is the eye glasses website" />
+    <meta name="author" content="Castco" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+</head>
+
+<body>
+    <header class="rx-header-wrapper">
+        <div id="headerskip" class="sr-only" tabindex="-1"></div> 
+        <div class="rx-container">
+            <div class="rx-back-button">
+                <button class="btn-back"> Back to product page</button>
+            </div>
+            <div class="rx-logo">
+                <div class="logo-bk">
+                    <a href="/"><img class="main-logo" src="assets/img/logo_CW.svg" alt=" US homepage"></a>
+                </div>
+            </div>
+            <div class="rx-empty"></div>
+        </div>
+    </header>
+    <div class="rx-container-inner">
+        <div class="rx-content">
+            <nav class="steps-selection">
+                <button class="step-btn previous-btn" disabled>previous step</button>
+                <ol>
+                    <li><a href="#" aria-current="step"><em></em><span>Vision</span></a></li>
+                    <li><em></em><span>Prescription</span></li>
+                    <li><em></em><span>Type</span></li>
+                    <li><em></em><span>Material</span></li>
+                </ol>
+                <button class="step-btn next-btn">next step</button>
+            </nav>
+            <div class="rx-content-inner">
+                <div class="heading-area">
+                    <h1>Select your vision type</h1>
+                </div>
+                <form action="#">
+                    <fieldset>
+                        <legend class="sr-only">Select your vision type</legend>
+                        <div class="selection-wrapper">
+                            <div class="selection-style">
+                                <div class="selection-style-wrapper">
+                                    <div class="selection-inner">
+                                        <div class="selection-item">    
+                                            <input type="radio" id="distance" name="vision-type" aria-describedby="distance-price distance-detail">
+                                            <label for="distance"><span>Distance</span></label>
+                                        </div>
+                                        <div class="selection-price"><span id="distance-price">$59.99</span></div>
+                                    </div>
+                                    <div class="selection-detail"><p id="distance-detail">Single vision lens typically for seeing in the distance, i.e. driving.</p></div>
+                                </div>
+                                <div class="selection-style-wrapper">
+                                    <div class="selection-inner">
+                                        <div class="selection-item">
+                                            <input type="radio" id="reading" name="vision-type" aria-describedby="reading-price reading-detail">
+                                            <label for="reading"><span>Reading</span></label>
+                                        </div>
+                                        <div class="selection-price"><span id="reading-price">$59.99</span></div>
+                                    </div>
+                                    <div class="selection-detail"><p id="reading-detail">Single vision lens typically for close-up tasks, i.e. reading, hobbies.</p></div>
+                                </div>
+                                <div class="selection-style-wrapper">
+                                    <div class="selection-inner">
+                                        <div class="selection-item">  
+                                            <input type="radio" id="non-prescription" name="vision-type" aria-describedby="np-price np-detail">
+                                            <label for="non-prescription"><span>Non Prescription</span></label>
+                                        </div>
+                                        <div class="selection-price"><span id="np-price">$59.99</span></div>
+                                    </div>
+                                    <div class="selection-detail"><p id="np-detail">Lens will be made with the same options but without a prescription.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="rx-side">
+            <div class="image-container">
+                <img src="assets/img/rx-frame-image.png" alt="Camilla Rossa">
+            </div>
+            <h2 class="frame-title">Camilla Rossa</h2>
+            <h3 class="frame-color">Brown tortoise - Medium</h3>
+            <div class="mobile-section-drawer">
+                <button aria-label="order summary details" aria-expanded="false"></button>
+                <div class="mobile-section-drawer-container" >
+                    <span class="sr-only" tabindex="-1">Order summary expanded</span>
+                    <h2>Order Summary</h2>
+                    <h3>(Frame + Lenses)</h3>
+                    <ul class="rx-selection-detail">
+                        <li class="frame-area">
+                            <div class="selection-item">
+                                <div class="selection-container">
+                                    <div class="selection-label">
+                                        <h4 class="selection-heading">Frame</h4>
+                                    </div> 
+                                    <div class="selection-value">
+                                        $59.99
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="selection-item">
+                                <h4 class="selection-heading">Vision type</h4>
+                                <div class="selection-container">
+                                    <span class="selection-label">
+                                        Dinstance
+                                    </span> 
+                                    <span class="selection-value">
+                                        $59.99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="selection-item">
+                                <h4 class="selection-heading">Lens type</h4>
+                                <div class="selection-container">
+                                    <span class="selection-label">
+                                        Polarized lenses
+                                    </span> 
+                                    <span class="selection-value">
+                                        +$10.00
+                                    </span>
+                                </div>
+                                <div class="selection-container">
+                                    <span class="selection-label">
+                                        Standard Polarized - Green
+                                    </span> 
+                                    <span class="selection-value">
+                                        Free
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-total-area">
+                            <div class="subtotal-heading">
+                                <strong>Subtotal</strong>
+                                <span>(Frame + Lenses)</span>
+                            </div>
+                            <div class="subtotal-price">$240.00</div> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-total-drawer">
+                    <strong>Subtotal</strong>
+                    <span>$240.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@mixin breakpoint($MobileScreen) {
+  @media (max-width: $MobileScreen) {
+    @content;
+  }
+}
+@mixin Tabbreakpoint($TabletScreen) {
+  @media (max-width: $TabletScreen) {
+    @content;
+  }
+}
+
+@mixin container {
+  max-width: $conatinerWidth;
+  margin: 0px auto;
+  padding: 0px 24px;
+  position: relative;
+}
+@mixin InnerHeading {
+  font-size: $secondary-heading-size;
+  line-height: $secondary-heading-lineHeight;
+  font-weight: $fontBold;
+  margin-bottom: $seconday-heading-margin-bottom;
+}
+@mixin MobileInnerHeading {
+  font-size: $secondary-mobileheading-size;
+  line-height: $secondary-mobileheading-lineHeight;
+}

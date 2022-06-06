@@ -1,0 +1,74 @@
+// Existing patient
+.existing-patient{
+    .presc-table{
+        margin-bottom: 30px;
+        tr{
+            td { 
+                padding: 10px 5px 6px;
+                &:first-child{
+                    width: 100px;
+                    @include breakpoint(520px) {
+                        width: 100%;
+                    }  
+                }
+            }
+            th { 
+                padding: 10px 5px 6px;
+                &:first-child{
+                    width: 100px;
+                    @include breakpoint(520px) {
+                        width: 100%;
+                    }  
+                }
+            }
+            
+        }
+    }
+    ul{
+        margin:0;
+        padding: 8px 0 0;
+        list-style: none;
+        li{
+            margin-bottom: 34px;
+        }
+        .ep-heading{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .image-area{
+            margin-bottom: 16px;
+            a{
+                display: block;
+                img{
+                    display: block;
+                    width: auto;
+                }
+            }
+        }
+        .btn{
+            width: 207px;
+            height: 40px;
+            left: 0;
+            top: 0;
+            background: #fff;
+            border: 1px solid #0060a9;
+            box-sizing: border-box;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #0060a9;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                background: #0060a9;
+                color: #fff;
+            }
+        }
+    }
+}

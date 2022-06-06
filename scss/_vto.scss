@@ -1,0 +1,480 @@
+.vto-area{
+    max-width: 472px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    text-align: center;
+
+    &.post{
+        max-width: 640px;
+
+        @include Tabbreakpoint($TabletScreen) {
+            max-width: 480px;
+        }
+        .vto-holder{
+            @include Tabbreakpoint($TabletScreen) {
+                margin: 0 0 16px;
+            }
+        }
+
+        h1{
+            @include Tabbreakpoint($TabletScreen) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    @include Tabbreakpoint($TabletScreen) { 
+        max-width: 352px; 
+        padding: 34px 0 0;
+    }
+    
+    h1{
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 700;
+        margin: 0 0 8px;
+
+        @include breakpoint($MobileScreen) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .sub-title{
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333;
+        margin: 0 0 32px;
+    }
+
+    .vto-holder{
+        margin: 0 0 24px;
+        position: relative;
+        img{
+            display: block;
+        }
+    }
+
+    .btn{
+        display: inline-block;
+        vertical-align: top;
+        min-width: 304px;
+        background: #3071A9;
+        text-align: center;
+        color: #fff;
+        border-radius: 3px;
+        text-decoration: none;
+        padding: 8px 5px;
+        margin: 0;
+        transition: 0.2s ease-in all;
+
+        @include Tabbreakpoint($TabletScreen) { min-width: 224px; }
+        @include breakpoint($MobileScreen) { min-width: 184px; }
+
+        &:hover{ background: #296293; }
+    }
+
+    .recom-area{
+        .title{
+            display: block;
+            font-size: 18px;
+            line-height: 24px;
+            color: #333;
+            margin: 0 0 16px;
+
+            @include Tabbreakpoint($TabletScreen) { font-size: 16px; }
+        }
+
+        .recom{
+            margin: 0 -16px;
+            @include breakpoint($MobileScreen) {
+                margin: 0 -12px;
+            }
+            .recom-item{
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 -4px 0 0;
+                padding: 0 16px;
+                box-sizing: border-box;
+                width: 25%;
+
+                @include breakpoint($MobileScreen) {
+                    width: 50%;
+                    padding: 0 12px;
+                }
+
+                .item-title{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #333;
+                    margin: 0 0 8px;
+                }
+
+                a{
+                    font-size: 14px;
+                    color: #0060A9;
+                    text-decoration: none;
+
+                    &:hover{ text-decoration: underline; }
+                }
+            }
+
+            .img-area{
+                width: 136px;
+                height: 136px;
+                border-radius: 136px;
+                margin: 0 auto 9px;
+                padding: 8px;
+                box-sizing: border-box;
+                // overflow: hidden;
+                border: 1px solid transparent;
+                transition: 0.2s ease-in all;
+
+                @include Tabbreakpoint($TabletScreen) { 
+                    width: 98px;
+                    height: 98px;
+                    border-radius: 98px;
+                }
+
+                @include breakpoint($MobileScreen) {
+                    width: 132px;
+                    height: 132px;
+                    border-radius: 132px;
+                }
+
+                &:hover{
+                    border-color: #005DAB;
+                }
+
+                img{
+                    width: auto;
+                    display: block;
+                    border-radius: 136px;
+                }
+            }
+            
+        }
+    }
+
+}
+.works{
+    padding: 80px 0;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    
+    h2{
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0 0 24px;
+
+        @include breakpoint($MobileScreen) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .work-row{
+
+        .work-col{
+            color: #5f5f5f;
+
+            &:last-child{ margin-bottom:0; }
+
+            @include breakpoint($MobileScreen) { margin-bottom: 24px; }
+        }
+
+        img{
+            width: auto;
+            display: block;
+            margin: 0 auto 16px;
+        }
+
+        h3{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            margin: 0 0 8px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+.frame-shapes{
+    padding: 80px 0 104px;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @include breakpoint($MobileScreen) { padding-bottom: 80px; }
+    
+    h2{
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0 0 62px;
+
+        @include Tabbreakpoint($TabletScreen) { 
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 0 52px;
+        }
+    }
+
+    .frames-row{
+
+        .frames-col{
+            color: #5f5f5f;
+
+            &:last-child{ margin-bottom:0; }
+
+            @include breakpoint($MobileScreen) { margin-bottom: 24px; }
+        }
+
+        img{
+            width: auto;
+            display: block;
+            margin: 0 auto 62px;
+
+            @include Tabbreakpoint($TabletScreen) {
+                margin: 0 auto 40px;
+            }
+        }
+
+        h3{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            margin: 0 0 16px;
+
+            @include Tabbreakpoint($TabletScreen) {
+                font-size: 16px;
+            }
+
+            @include breakpoint($MobileScreen) { margin: 0 0 8px; }
+        }
+
+        p{
+            font-size: 14px;
+            margin: 0 0 16px;
+        }
+
+        .btn{
+            display: inline-block;
+            vertical-align: top;
+            min-width: 304px;
+            background: #fff;
+            text-align: center;
+            color:#0060A9;
+            border-radius: 3px;
+            text-decoration: none;
+            padding: 8px 5px;
+            border: 1px solid #0060A9;
+            margin: 0;
+            transition: 0.2s ease-in all;
+            box-sizing: border-box;
+    
+            @include Tabbreakpoint($TabletScreen) { min-width: 224px; }
+            @include breakpoint($MobileScreen) { min-width: 288px; }
+    
+            &:hover{ 
+                background: #296293; 
+                color: #fff;
+            }
+        }
+    }
+}
+
+.vto-popup{
+    fieldset{
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    label{
+        font-size: 14px;
+        color: #333;
+        display: block;
+        margin: 0 0 8px;
+    }
+
+    .field{
+        position: relative;
+
+        &.error{
+
+            .checkbox-field{
+                background: #FDD6D6;
+                border: 2px solid #d32029;
+                padding: 10px 15px;
+                border-radius: 3px;
+                margin: 0 0 4px;
+
+                label{ margin: 0; }
+            }
+
+            .select{
+                border-color: #D32029;
+                border-width: 2px;
+                margin: 0 0 4px;
+            }
+
+            .error-msg{ display: block; }
+
+    
+        }
+
+        .error-msg{
+            color: #D32029;
+            font-size: 12px;
+            line-height: 20px;
+            display: none;
+        }
+
+        .select{
+            max-width: 268px;
+            border: 1px solid #909090;
+            height: 40px;
+            position: relative;
+            border-radius: 3px;
+
+            @include breakpoint($MobileScreen) { max-width: inherit; }
+
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 40px;
+                height: 38px;
+                content: '';
+                border-radius: 3px;
+                pointer-events: none;
+                background: transparent url(/assets/icon/chevron-down.svg) no-repeat 50% 50%;
+            }
+
+            select{
+                width: 100%;
+                height: 40px;
+                background: none;
+                border:none;
+                color: #5f5f5f;
+                font-size: 14px;
+                margin: 0;
+                padding: 5px 8px;
+                cursor: pointer;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                &:-ms-expand {
+                    display: none;
+                }
+            }
+        }
+
+        .checkbox-field{
+
+            input{
+                opacity: 0;
+                // visibility: hidden;
+                position: absolute;
+        
+                &:checked + label{
+                    &:before{
+                        display: block;
+                        border-color: #3071a9;
+                        z-index: 99;
+                    }
+                }
+                &:focus + label{
+                    &:after{
+                        outline: 2px solid #000;
+                    }
+                }
+            }
+            label{
+                font-size: 14px;
+                color: #333;
+                position: relative;
+                padding: 0 0 0 24px;
+                cursor: pointer;
+                display: block;
+        
+                &:before {
+                    background: url(/assets/icon/check.svg) no-repeat 50% 50%;
+                    background-size: calc(100% + 4px) auto;
+                    font-size: 10px;
+                    line-height: 14px;
+                    text-align: center;
+                    display: none;
+                    color: #fff;
+                    content: '';
+                }
+        
+                &:before,
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    width: 12px;
+                    height: 12px;
+                    // margin-top: -7px;
+                    border-radius: 3px;
+                    border: 1px solid #333;
+                    content: '';
+                    background-color: #fff;
+                }
+            }
+        }
+        
+    }
+
+    
+}
+
+.vto-rec{ 
+     
+    p{
+        font-size: 14px;
+        color: #333;
+        margin: 0 0 24px;
+
+        a{ 
+            color: $PrimaryColor; 
+            text-decoration: none;
+        }
+    }
+
+    
+}
+
+.vto-card{
+    strong.title{
+        color: #333;
+        display: block;
+        margin: 0 0 16px;
+        @include Tabbreakpoint($TabletScreen) { font-size: 14px; }
+    }
+    .pd-both{ display: none; }
+    .checkbox-field{ margin: 0 0 16px; }
+    .error-msg{
+        font-weight: 700;
+        padding: 0 0 0 12px;
+    }
+
+    .row{
+        margin: 0 -16px;
+
+        .col-6{
+            padding: 0 16px;
+            margin-right: -4px;
+            width: 50%;
+        }
+    }
+}

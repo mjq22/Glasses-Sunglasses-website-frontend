@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Order Detail Page</title>
+    <meta name="description" content="This is the eye glasses website" />
+    <meta name="author" content="Castco" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+</head>
+
+<body>
+    <header class="rx-header-wrapper">
+        <div id="headerskip" class="sr-only" tabindex="-1"></div> 
+        <div class="rx-container">
+            <div class="rx-back-button">
+                <button class="btn-back popup-link" data-popup="exit-rx-poupup"> Back to product page</button>
+            </div>
+            <div class="rx-logo">
+                <div class="logo-bk">
+                    <a href="/"><img class="main-logo" src="assets/img/logo_CW.svg" alt=" US homepage"></a>
+                </div>
+            </div>
+            <div class="rx-empty"></div>
+        </div>
+    </header>
+    <div class="rx-container-inner">
+        Exit popup - Click "Back to Product page" to view the popup
+    </div>
+
+    <!-- Exit Popoup -->
+    <div class="popup exit-rx-popup" id="exit-rx-poupup" tabindex="-1">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Exit ordering process?</h3>
+                <a href="#" class="popup-close">close</a>
+            </div>
+            <div class="content-holder">
+                <p>Are you sure you want to exit the ordering process? You will lose all progress.</p>
+            </div>
+            <div class="popup-footer">
+                <a href="#" class="btn btn-cancel popup-close">Cancel</a>
+                <a href="#" class="btn">Yes, go back to product page</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

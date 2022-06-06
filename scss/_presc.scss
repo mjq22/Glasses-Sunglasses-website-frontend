@@ -1,0 +1,276 @@
+.presc-section{
+    background: #FAFAFA;
+    
+    h1{
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #333;
+        margin: 0 0 8px;
+
+        @include Tabbreakpoint($TabletScreen) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .sub-title{
+        color: #707070;
+        display: block;
+        margin: 0 0 16px;
+    }
+
+    .presc-list{
+
+        margin: 0 -16px;
+        padding: 0;
+        list-style: none;
+
+        >li{
+            
+            padding: 16px;
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            margin: 0 -4px 0 0;
+
+            @include Tabbreakpoint($TabletScreen) {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+
+            @include breakpoint(992px) { 
+                width: 100%;
+                display: block;
+            }
+
+            .presc-holder{
+                border: 1px solid #909090;
+                background: #fff;
+                padding: 16px;
+            }
+        }
+
+        .presc-details{ 
+            overflow: hidden; 
+            margin: 0 0 16px;
+
+            @include breakpoint(520px) { margin: 0 0 29px; }
+        }
+        figure{
+            margin: 0;
+            padding: 0;
+            max-width: 110px;
+            float: left;
+            line-height: 0;
+
+            @include breakpoint(520px) { float: none; }
+        }
+        .presc-info{
+            float: right;
+            width: calc(100% - 110px);
+            color: #333;
+            padding: 0 0 0 16px;
+            box-sizing: border-box;
+
+            @include breakpoint(520px) { 
+                float: none; 
+                padding: 0 0 8px;
+                width: 100%;
+            }
+
+            .title{
+                display: block;
+                font-weight: 700;
+                margin: 0 0 8px;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li{
+                    margin: 0 0 8px;
+
+                    >span{ 
+                        display: inline-block; 
+                        vertical-align: middle;
+                    }
+
+                    .info-title{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .presc-empty{
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 24px 0 80px;
+        color: #333;
+
+        @include Tabbreakpoint($TabletScreen) {
+            max-width: 400px;
+        }
+
+        p{
+           font-size: 22px;
+           line-height: 32px; 
+           margin: 0 0 16px;
+
+           br{
+                @include breakpoint($MobileScreen) { display: none; }
+           }
+        }
+
+        .btn{ 
+            min-width: 304px; 
+            @include breakpoint($MobileScreen) {
+                min-width: inherit;
+            }
+        }
+    }
+
+    .btn{
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 256px;
+        background: #3071A9;
+        text-align: center;
+        color: #fff;
+        border-radius: 3px;
+        text-decoration: none;
+        padding: 8px 5px;
+        transition: 0.2s ease-in all;
+
+        &:hover{ background: #296293; }
+
+        @include breakpoint($MobileScreen) {
+            float: none;
+            display: block;
+            min-width: inherit;
+        }
+    }
+}
+
+.presc-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #333;
+
+    &:after{
+        display: block;
+        clear: both;
+        content: '';
+    }
+
+    @include breakpoint(520px) {
+        display: block;
+    }
+
+    thead{
+        @include breakpoint(520px) {
+            display: block;
+            float: left;
+            width: 30%;
+        }
+        tr{
+            @include breakpoint(520px) {
+                display: block;
+            }
+            background: #FAFAFA;
+
+            th{
+                box-sizing: border-box;
+                padding: 8px 5px;
+
+                @include breakpoint(520px) {
+                    display: block;
+                    padding: 10px 8px;
+                    text-align: left;
+                }
+
+                &:first-child{ 
+                    width: 62px; 
+                    @include breakpoint(520px) { width: auto; }
+                }
+
+                span{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-weight: 400;
+                }
+
+                &:nth-child(odd){
+                    @include breakpoint(520px) {
+                        background: #EEEEEE;
+                    }
+                }
+                &:nth-child(even){
+                    @include breakpoint(520px) {
+                        background: #FAFAFA;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody{
+        @include breakpoint(520px) {
+            display: block;
+            float: left;
+            width: 70%;
+        }
+        tr{
+            @include breakpoint(520px) {
+                display: block;
+                float: left;
+                width: 50%;
+            }
+            &:nth-child(odd){
+                background: #EEEEEE;
+            }
+            &:nth-child(even){
+                background: #FAFAFA;
+            }
+            td{
+                box-sizing: border-box;
+                padding: 20px 5px;
+
+                &:nth-child(odd){
+                    @include breakpoint(520px) {
+                        background: #EEEEEE;
+                    }
+                }
+                &:nth-child(even){
+                    @include breakpoint(520px) {
+                        background: #FAFAFA;
+                    }
+                }
+
+                &:first-child{
+                    @include breakpoint(520px) {
+                        font-weight: 700;
+                    }
+                }
+
+                &.prism-val{
+                    @include breakpoint(520px) {
+                        min-height: 41px;
+                    }    
+                }
+                @include breakpoint(520px) {
+                    display: block;
+                    padding: 10px 8px;
+                }
+            }
+        }
+    }
+}

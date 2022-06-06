@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Visual/Icons/Menu</title>
+    <defs>
+        <path d="M19.9914712,17.1012793 L19.9914712,19.5 L4,19.5 L4,17.1012793 L19.9914712,17.1012793 Z M19.9914712,10.7686567 L19.9914712,13.1673774 L4,13.1673774 L4,10.7686567 L19.9914712,10.7686567 Z M19.9914712,4.5 L19.9914712,6.89872068 L4,6.89872068 L4,4.5 L19.9914712,4.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Visual/Icons/Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="🎨-Icon-Color" fill="#333333" xlink:href="#path-1"></use>
+    </g>
+</svg>

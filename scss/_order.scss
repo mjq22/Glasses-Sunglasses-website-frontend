@@ -1,0 +1,122 @@
+.order-section{
+    background: #FAFAFA;
+    
+    h1{
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #333;
+        margin: 0 0 16px;
+
+        @include Tabbreakpoint($TabletScreen) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .order-list{
+        margin: 0;
+        padding: 0 0 56px;
+        list-style: none;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333;
+
+        li{
+            border: 1px solid #909090;
+            background: #fff;
+            margin: 0 0 24px;
+            padding: 16px;
+
+            &:after{
+                display: block;
+                clear: both;
+                content: '';
+            }
+
+            .order-info{
+                float: left;
+
+                >span{ 
+                    display: block; 
+                    margin: 0 0 4px;
+
+                    &:last-child{ margin: 0; }
+                }
+
+                .order-status{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .order-items{ font-weight: 700; }
+
+                @include breakpoint($MobileScreen) {
+                    float: none;
+                    margin: 0 0 16px;
+                }
+            }
+
+            .btn{
+                float: right;
+                display:block;
+
+                @include breakpoint($MobileScreen) {
+                    float: none;
+                    min-width: inherit;
+                }
+            }
+
+        }
+    }
+
+    .order-empty{
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 24px 0 80px;
+        color: #333;
+
+        @include Tabbreakpoint($TabletScreen) {
+            max-width: 478px;
+        }
+
+        p{
+           font-size: 22px;
+           line-height: 32px; 
+           margin: 0 0 16px;
+
+           br{
+                @include breakpoint($MobileScreen) { display: none; }
+           }
+        }
+
+        .btn{ 
+            min-width: 304px; 
+            @include breakpoint($MobileScreen) {
+                min-width: inherit;
+            }
+        }
+    }
+
+    .btn{
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 256px;
+        background: #3071A9;
+        text-align: center;
+        color: #fff;
+        border-radius: 3px;
+        text-decoration: none;
+        padding: 8px 5px;
+        transition: 0.2s ease-in all;
+
+        &:hover{ background: #296293; }
+
+        @include breakpoint($MobileScreen) {
+            float: none;
+            display: block;
+            min-width: inherit;
+        }
+    }
+}

@@ -1,0 +1,740 @@
+.order-detail{
+    padding: 0 0 80px;
+
+    .order-box{
+        border: 1px solid #909090;
+        background: #fff;
+        margin: 24px 0 0;
+        padding: 16px;
+
+        h2{
+            font-size: 18px;
+            line-height: 24px;
+            color: #333;
+            margin: 0 0 4px;
+            font-weight: 700;
+        }
+
+        .order-msg{
+            padding: 12px;
+            margin: 12px 0 0;
+            color: #333;
+
+            &.msg-warn{
+                background: #FFF8D2;
+                border:2px solid #FFCC00;
+                border-radius: 3px;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .info-list{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333;
+
+            li{
+                margin: 0 0 4px;
+
+                &:last-child{ margin: 0; }
+            }
+        }
+    }
+
+    .order-item{
+        padding: 16px 0;
+        border-bottom: 1px solid #ccc;
+
+        .offscreen{ display: none; }
+
+        &:last-child{ 
+            border:none; 
+
+            @include breakpoint($MobileScreen) { padding-bottom: 0; }
+        }
+
+        &:after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        .item-info{
+            width: 50%;
+            float: left;
+
+            @include breakpoint($MobileScreen) {
+                float: none;
+                width: 100%;
+                margin: 0 0 16px;
+            }
+        }
+
+        figure{
+            width: 96px;
+            height: 96px;
+            float: left;
+            background: #C4C4C4;
+            margin: 0;
+            padding: 0;
+            display: table;
+            box-sizing: border-box;
+            padding: 10px;
+
+            @include breakpoint($MobileScreen) {
+                width: 60px;
+                height: 60px;
+            }
+
+            .img-holder{
+                display: table-cell;
+                vertical-align: middle;
+                height: 100%;
+            }
+            img{
+                display: inline-block;
+                vertical-align: middle;
+                width: auto;
+            }
+        }
+
+        .frame-info{
+            overflow: hidden;
+            padding: 0 0 0 16px;
+            font-size: 16px;
+            list-style: 24px;
+            color: #333;
+
+            >span{ 
+                display: block; 
+                margin: 0 0 4px;
+            }
+
+            .frame-name{
+                a{ 
+                    color: #0060A9; 
+                    text-decoration: none;
+                }
+            }
+
+            .ship-status{
+                font-weight: 700;
+            }
+        }
+
+        .presc-info{
+            width: 50%;
+            float: left;
+            font-size: 16px;
+            list-style: 24px;
+            color: #333;
+
+            @include breakpoint($MobileScreen) {
+                float: none;
+                width: 100%;
+            }
+
+            h3{
+                font-size: 16px;
+                list-style: 24px;
+                color: #333;
+                font-weight: 700;
+                margin: 0 0 4px;
+            }
+
+            a{
+                color: #0060A9;
+                display: inline-block;
+                vertical-align: top;
+                text-decoration: none;
+            }
+
+            .pd-val,
+            .view-presc{ 
+                display: inline-block;
+                vertical-align: top;
+
+                a{ text-decoration: underline;  }
+            }
+            
+            .presc-detail{ margin: 0 0 16px; }
+
+            .pd-detail{
+                .measure-pd-link{
+                    display: block;
+                    padding: 8px 0 16px;
+                    font-size: 14px;
+                }
+                form{ 
+                    padding: 4px 0 0; 
+
+                    input[type="submit"]{
+                        margin: 0;
+                        padding: 0;
+                        width: 140px;
+                        height: 40px;
+                        border-radius: 3px;
+                        border:none;
+                        background: #3071A9;
+                        color: #fff;
+                        font-size: 16px;
+                        cursor: pointer;
+
+                        @include breakpoint($MobileScreen) { width: 100%; }
+                    }
+                }
+                fieldset{
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            
+                label{
+                    font-size: 14px;
+                    color: #333;
+                    display: block;
+                    margin: 0 0 8px;
+                }
+
+                .pd-single{
+                    display: inline-block;
+                    vertical-align: middle;
+                    max-width: 110px;
+
+                    @include breakpoint($MobileScreen) { max-width: 50%; }
+                }
+
+                .pd-both{
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    @include breakpoint($MobileScreen) { 
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                }
+            
+                .field{
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 -4px 0 0;
+                    padding: 0 18px 0 0;
+
+                    @include breakpoint($MobileScreen) {
+                        padding: 0;
+                        width: 100%;
+                    }
+
+                    &.pd-check{
+                        @include Tabbreakpoint($TabletScreen) {
+                            display: block;
+                            padding: 16px 0 0;
+                        }
+                    }
+
+                    &.pd-left,
+                    &.pd-right{
+                        max-width: 110px;
+
+                        @include breakpoint($MobileScreen) {
+                            max-width: inherit;
+                            width: 50%;
+                            box-sizing: border-box;
+                        }
+                    }
+
+                    &.pd-left{ 
+                        @include breakpoint($MobileScreen) { padding: 0 0 0 8px; }
+                    }
+
+                    &.pd-right{ 
+                        @include breakpoint($MobileScreen) { padding: 0 8px 0 0; }
+                    }
+            
+                    &.error{
+            
+                        .checkbox-field{
+                            background: #FDD6D6;
+                            border: 2px solid #d32029;
+                            padding: 10px 15px;
+                            border-radius: 3px;
+                            margin: 0 0 4px;
+            
+                            label{ margin: 0; }
+                        }
+            
+                        .select{
+                            border-color: #D32029;
+                            border-width: 2px;
+                            margin: 0 0 4px;
+                        }
+            
+                        .error-msg{ display: block; }
+            
+                
+                    }
+            
+                    .error-msg{
+                        color: #D32029;
+                        font-size: 12px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        padding: 3px 14px 0;
+                        display: block;
+                        display: none;
+                    }
+            
+                    .select{
+                        width: 110px;
+                        border: 1px solid #909090;
+                        height: 40px;
+                        position: relative;
+                        border-radius: 3px;
+                        box-sizing: border-box;
+            
+                        @include breakpoint($MobileScreen) { width: 100%; }
+            
+                        &:after {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 40px;
+                            height: 38px;
+                            content: '';
+                            border-radius: 3px;
+                            pointer-events: none;
+                            background: transparent url(/assets/icon/chevron-down.svg) no-repeat 50% 50%;
+                        }
+            
+                        select{
+                            width: 100%;
+                            height: 40px;
+                            background: none;
+                            border:none;
+                            color: #5f5f5f;
+                            font-size: 14px;
+                            margin: 0;
+                            padding: 5px 8px;
+                            cursor: pointer;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+            
+                            &:-ms-expand {
+                                display: none;
+                            }
+                        }
+                    }
+            
+                    
+                    
+                }
+            }
+        }
+    }
+}
+
+//Checkbox
+.checkbox-field{   
+    input{
+        opacity: 0;
+        // visibility: hidden;
+        position: absolute;
+
+        &:checked + label{
+            &:before{
+                display: block;
+                border-color: #3071a9;
+                z-index: 99;
+            }
+        }
+        &:focus + label{
+            &:after{
+                outline: 2px solid #000;
+            }
+        }
+    }
+    label{
+        font-size: 14px;
+        color: #333;
+        position: relative;
+        padding: 0 0 0 30px;
+        cursor: pointer;
+        display: block;
+        margin: 0;
+
+        &:before {
+            background: url(/assets/icon/check.svg) no-repeat 50% 50%;
+            background-size: calc(100% + 4px) auto;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: center;
+            display: none;
+            color: #fff;
+            content: '';
+        }
+
+        &:before,
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 3px;
+            width: 18px;
+            height: 18px;
+            // margin-top: -7px;
+            border-radius: 3px;
+            border: 2px solid #909090;
+            content: '';
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+    }
+}
+
+//Rx Popup
+.rx-popup{
+    padding-top: 83px;
+
+    @include breakpoint($MobileScreen) { 
+        padding-top: 60px; 
+        padding-bottom: 60px; 
+    }
+
+    .popup-content{ 
+        max-width: 558px; 
+        max-height: calc(100vh - 114px);
+    }
+    .content-holder{
+        padding-bottom: 0 !important;
+
+        .rx-top{
+            padding: 0 0 16px;
+            font-size: 14px;
+            line-height: 20px;
+
+            .rx-details{
+                margin: 0 0 4px;
+
+                &:after{
+                    content: '';
+                    clear: both;
+                    display: block;
+                }
+
+                >span{ display: block; }
+                .title{ 
+                    float: left;
+                    width: 50%;
+                    font-weight: 700; 
+                }
+
+                .add-new-rx{
+                    float: right;
+                    text-align: right;
+                    width: 50%;
+                    color: #0060A9;
+                    text-decoration: none;
+                    background: none;
+                    border:none;
+                    padding: 0;
+                    cursor: pointer;
+                }
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+            
+        }
+
+        .no-rx{
+            padding: 16px 0;
+            border-top: 1px solid #CCCCCC;
+
+            p{
+                color: #5F5F5F;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .rx-item{
+            padding: 16px 0;
+            border-top: 1px solid #CCCCCC;
+
+            .select-presc{
+                display: block;
+                background: #3071A9;
+                text-align: center;
+                color: #fff;
+                border-radius: 3px;
+                text-decoration: none;
+                padding: 8px 5px;
+                margin: 16px 0 0;
+                transition: 0.2s ease-in all;
+
+                &:hover{ background: #296293; }
+            }
+        }
+
+        .presc-details{ 
+            overflow: hidden; 
+            margin: 0 0 16px;
+
+            @include breakpoint(520px) { margin: 0 0 29px; }
+        }
+        figure{
+            margin: 0;
+            padding: 0;
+            max-width: 110px;
+            float: left;
+            line-height: 0;
+
+            @include breakpoint(520px) { float: none; }
+        }
+        .presc-info{
+            float: right;
+            width: calc(100% - 110px);
+            color: #333;
+            padding: 0 0 0 16px;
+            box-sizing: border-box;
+
+            @include breakpoint(520px) { 
+                float: none; 
+                padding: 0 0 8px;
+                width: 100%;
+            }
+
+            .title{
+                display: block;
+                font-weight: 700;
+                margin: 0 0 8px;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li{
+                    margin: 0 0 8px;
+
+                    >span{ 
+                        display: inline-block; 
+                        vertical-align: middle;
+                    }
+
+                    .info-title{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        div[role="table"]{
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: #333;
+
+            [role="rowgroup"]{
+                display: table-row-group;
+
+                &:first-child{
+                    [role="row"]{
+                        
+                        background: #FAFAFA;
+
+                        [role="columnheader"]{
+                            padding: 8px 5px;
+                            font-weight: 700;
+
+                            span{
+                                display: block;
+                                font-size: 14px;
+                                line-height: 17px;
+                                font-weight: 400;
+                            }
+                        }
+                        
+                    }
+                }
+
+                &:last-child{
+                    [role="row"]{
+                        &:nth-child(odd){
+                            background: #EEEEEE;
+                        }
+                        &:nth-child(even){
+                            background: #FAFAFA;
+                        }
+                    }
+
+                    [role="cell"]{
+                        padding: 20px 5px;
+                    }
+                }
+            }
+
+            [role="row"] {
+                display: table-row;
+            }
+
+            [role="cell"], 
+            [role="columnheader"]{
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            [role="columnheader"]{
+                &:first-child{ 
+                    width: 100px; 
+                    @include breakpoint(520px) { width: auto; }
+                }
+
+                &:nth-child(odd){
+                    @include breakpoint(520px) {
+                        background: #EEEEEE;
+                    }
+                }
+                &:nth-child(even){
+                    @include breakpoint(520px) {
+                        background: #FAFAFA;
+                    }
+                }
+            }
+
+            
+        }
+        .presc-table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: #333;
+
+            &:after{
+                display: block;
+                clear: both;
+                content: '';
+            }
+
+            @include breakpoint(520px) {
+                display: block;
+            }
+
+            thead{
+                @include breakpoint(520px) {
+                    display: block;
+                    float: left;
+                    width: 30%;
+                }
+                tr{
+                    @include breakpoint(520px) {
+                        display: block;
+                    }
+                    background: #FAFAFA;
+
+                    th{
+                        
+                        padding: 8px 5px;
+
+                        @include breakpoint(520px) {
+                            display: block;
+                            padding: 10px 8px;
+                            text-align: left;
+                        }
+
+                        &:first-child{ 
+                            width: 100px; 
+                            @include breakpoint(520px) { width: auto; }
+                        }
+
+                        span{
+                            display: block;
+                            font-size: 14px;
+                            line-height: 17px;
+                            font-weight: 400;
+                        }
+
+                        &:nth-child(odd){
+                            @include breakpoint(520px) {
+                                background: #EEEEEE;
+                            }
+                        }
+                        &:nth-child(even){
+                            @include breakpoint(520px) {
+                                background: #FAFAFA;
+                            }
+                        }
+                    }
+                }
+            }
+
+            tbody{
+                @include breakpoint(520px) {
+                    display: block;
+                    float: left;
+                    width: 70%;
+                }
+                tr{
+                    @include breakpoint(520px) {
+                        display: block;
+                        float: left;
+                        width: 50%;
+                    }
+                    &:nth-child(odd){
+                        background: #EEEEEE;
+                    }
+                    &:nth-child(even){
+                        background: #FAFAFA;
+                    }
+                    td{
+                        padding: 20px 5px;
+
+                        &:nth-child(odd){
+                            @include breakpoint(520px) {
+                                background: #EEEEEE;
+                            }
+                        }
+                        &:nth-child(even){
+                            @include breakpoint(520px) {
+                                background: #FAFAFA;
+                            }
+                        }
+
+                        &:first-child{
+                            @include breakpoint(520px) {
+                                font-weight: 700;
+                            }
+                        }
+
+                        &.prism-val{
+                            @include breakpoint(520px) {
+                                min-height: 41px;
+                            }    
+                        }
+                        @include breakpoint(520px) {
+                            display: block;
+                            padding: 10px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popup-footer{
+        .btn{
+            float: none;
+            display: block;
+        }
+    }
+}

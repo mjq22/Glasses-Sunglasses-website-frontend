@@ -1,0 +1,226 @@
+.main-wrapper {
+  overflow: hidden;
+  position: relative;
+  .hero_banner {
+    @include Tabbreakpoint($TabletScreen) {
+      padding: 0px;
+    }
+    .main-banner {
+      position: relative;
+      overflow: hidden;
+      background-image: url("/assets/img/home-hero-desktop.png");
+      min-height: 400px;
+      background-position: top center;
+      background-size: cover;
+      max-width: 1400px;
+      margin: 0px auto;
+
+      @include Tabbreakpoint($TabletScreen) {
+        background-image: url("/assets/img/home-hero-mobile.png");
+      }
+      @include breakpoint($MobileScreen) {
+        background-position: center;
+        background-image: url("/assets/img/home-hero-mobile.png");
+        height: 240px;
+        min-height: 240px;
+        background-size: cover;
+      }
+      @include breakpoint($smartMobileScreen) {
+        background-position: right center;
+        background-image: url("/assets/img/home-hero-mobile-c.jpg");
+      }
+      .inner-banner {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 0px 16px;
+        @include Tabbreakpoint($TabletScreen) {
+          margin-left: calc(8.3333% + 16px);
+        }
+        @include breakpoint($MobileScreen) {
+          width: 50%;
+          margin-left: 0px;
+        }
+        @include breakpoint($smartMobileScreen) {
+          width: 100%;
+          max-width: 190px;
+        }
+        .banner-title {
+          font-size: $main-heading-size;
+          margin-bottom: 24px;
+          font-weight: $lightfontweight;
+          line-height: $secondary-heading-lineHeight;
+          @include Tabbreakpoint($TabletScreen) {
+            font-size: $main-Tablet-heading-size;
+          }
+          @include breakpoint($MobileScreen) {
+            font-size: $mobile-main-heading-size;
+          }
+        }
+        .banner-btn {
+          width: 220px;
+          text-align: center;
+          @include breakpoint($MobileScreen) {
+            width: 210px;
+          }
+        }
+      }
+    }
+  }
+  .inner-wrapper {
+    > div {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      @include breakpoint($MobileScreen) {
+        padding: 0px;
+        display: block;
+      }
+    }
+  }
+  .image-left-content-wrapper {
+    margin-top: 64px;
+    @include Tabbreakpoint($TabletScreen) {
+      margin-top: 40px;
+    }
+    .image-content-block {
+      @include breakpoint($MobileScreen) {
+        padding: 0px;
+      }
+    }
+  }
+  .image-right-content-wrapper {
+    margin: 56px 0px;
+    .image-content-block {
+      @include breakpoint($MobileScreen) {
+        padding: 0px;
+      }
+    }
+  }
+  .image-content-block {
+    .image-block-title {
+      @include InnerHeading();
+      @include Tabbreakpoint($TabletScreen) {
+        @include MobileInnerHeading();
+      }
+      @include breakpoint($MobileScreen) {
+        margin-top: 16px;
+      }
+    }
+    .image-block-description {
+      margin: 0px;
+      margin-bottom: $descriptionMarginBottom;
+      line-height: $primaryLineHeight;
+      font-size: $primaryFontsize;
+    }
+    .image-block-btn {
+      display: block;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 16px;
+      text-align: center;
+      @include breakpoint($MobileScreen) {
+        width: 100%;
+      }
+    }
+  }
+  .explore-wrapper {
+    .explore-title {
+      @include InnerHeading();
+      @include Tabbreakpoint($TabletScreen) {
+        @include MobileInnerHeading();
+      }
+    }
+    .explore-description {
+      margin-top: 0px;
+      margin-bottom: $descriptionMarginBottom;
+    }
+    .product-carousel {
+      .product-thumbnail {
+        margin: 0px auto;
+      }
+      .product-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+    }
+    .shop-button-block {
+      display: block;
+      margin-top: 48px;
+      .shop-btn {
+        width: 30%;
+        text-decoration: none;
+        @include breakpoint($MobileScreen) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .find-location-wrapper {
+    margin: 56px 0px;
+  }
+  .blog-wrapper {
+    margin-bottom: 80px;
+    @include breakpoint($MobileScreen) {
+      margin-bottom: 48px;
+    }
+    .blog-top-content {
+      display: block;
+      margin-bottom: 32px;
+      .blog-title {
+        font-size: $secondary-heading-size;
+        font-weight: $fontBold;
+        line-height: $secondary-heading-lineHeight;
+        margin-bottom: $seconday-heading-margin-bottom;
+        @include breakpoint($MobileScreen) {
+          @include MobileInnerHeading();
+        }
+      }
+      .blog-description {
+        margin-top: 0px;
+        margin-bottom: $descriptionMarginBottom;
+      }
+    }
+    .blog-posts {
+      .blog-item {
+        vertical-align: top;
+        display: table-cell;
+        @include Tabbreakpoint($TabletScreen) {
+          display: table-cell;
+        }
+        @include breakpoint($MobileScreen) {
+          display: block;
+          width: 100%;
+        }
+        .blog-item-thumbnail {
+          margin-bottom: 16px;
+        }
+        .blog-item-title {
+          line-height: $primaryLineHeight;
+          font-size: 18px;
+          margin-bottom: $seconday-heading-margin-bottom;
+          font-weight: $lightfontweight;
+          @include Tabbreakpoint($TabletScreen) {
+            font-size: $primaryFontsize;
+          }
+        }
+        .blog-item-description {
+          color: $secdonary-text-color;
+          margin: 0px;
+          line-height: $primaryLineHeight;
+          font-size: $primaryFontsize;
+          @include Tabbreakpoint($TabletScreen) {
+            font-size: 14px;
+          }
+          @include breakpoint($MobileScreen) {
+            margin-bottom: 32px;
+          }
+        }
+        .blog-item-details ul {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}

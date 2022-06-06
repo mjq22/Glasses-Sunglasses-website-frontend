@@ -1,0 +1,101 @@
+// Capture PD
+.capture-pd{
+    .heading-area{
+        margin: 34px 0 24px;
+        @include Tabbreakpoint($TabletScreen) { margin: 0px 0 32px; }
+        h1{
+            margin:0 0 23px;
+            @include Tabbreakpoint($TabletScreen) { margin: 0 0 31px; }
+        }
+        p{
+            line-height: 24px;
+            @include Tabbreakpoint($TabletScreen) {
+                text-align: left;
+            }
+        }
+    }
+    .image-holder{
+        margin: 0 0 27px;
+        @include Tabbreakpoint($TabletScreen) { margin: 0 0 35px; }
+        img{
+            max-width: 100%;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .rx-capture-link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #0060A9;
+        text-decoration: none;
+    }
+    .pd-check {
+        margin: 0 0 24px;
+        @include Tabbreakpoint($TabletScreen) { margin: 0 0 32px; }
+    }
+    .floating-label-content {
+        margin-bottom: 9px;
+    }
+    .measure-pd-link {
+        margin: 0 0 47px;
+    }
+    .skip-pd-link {
+        margin: 16px 0 0;
+        @include breakpoint($smartMobileScreen) { text-align: center; }
+    }
+    .pd-single {
+        max-width: 230px;
+        @include breakpoint($smartMobileScreen) { max-width: 100%; }
+    }
+    .pd-both {
+        float: left;
+        width: 100%;
+        .field{
+            max-width: 150px;
+            float: left;
+            margin-right: 20px;
+            width: 100%;
+            @include breakpoint($smartMobileScreen) { width: 100%; margin:0 0 16px; }
+            &:last-child{
+                margin-right: 0;
+                @include breakpoint($smartMobileScreen) { width: 100%; margin:0; }
+            }
+        }
+    }
+
+    .pd-values{
+        margin: 0 0 32px;
+        @include breakpoint($smartMobileScreen) { margin: 0 0 40px; }
+        h2{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #5F5F5F;
+        }
+        .edit-label{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+            margin-top: 3px;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right:5px;
+            }
+            a{
+                display: inline-block;
+                vertical-align: middle;
+                color: #0060A9;
+            }
+        }
+    }
+}

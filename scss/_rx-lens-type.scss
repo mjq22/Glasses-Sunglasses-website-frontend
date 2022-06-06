@@ -1,0 +1,188 @@
+// Lens Type
+.rx-content{ 
+    .rx-content-inner{
+        .lens-type{
+            padding-right: 31px;
+        }
+    }
+}
+.lens-type{
+    
+    .image-area{
+        padding: 12px 0 27px;
+        @include breakpoint($smartMobileScreen) { padding: 12px 0 29px; }
+        img{
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .more-info-box{
+        margin:5px 0;
+        @include breakpoint($smartMobileScreen) { margin: 9px 0; }
+        .button-box{
+            text-align: right;
+            @include breakpoint($smartMobileScreen) { text-align: center; }
+            .button-detail{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: right;
+                color: #3071A9;
+                padding: 0;
+                background: no-repeat;
+                border: 0;
+                cursor: pointer;
+                position: relative;
+                @include breakpoint($smartMobileScreen) { text-align: center; display: block; margin: 0 auto 2px; }
+                &.active{
+                    padding-left: 18px;
+                    &:before{
+                        background-image: url(/assets/icon/icon-collapse.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        left: 0;
+                        content: "";
+                        background-size: 16px;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+        
+        .detail-box{
+            padding: 27px 12px 19px 14px;
+            background: #FAFAFA;
+            border-bottom:1px solid #D9D9D9;
+            display: none;
+            @include breakpoint($MobileScreen) { 
+                padding: 24px 12px 16px 12px;
+                background: #fff; 
+            }
+            .availbale-options{
+                margin: 14px 0 0;
+                padding: 18px 0 0;
+                @include breakpoint($MobileScreen) {
+                    margin: 17px 0 0;
+                    padding: 19px 0 0;
+                }
+                list-style: none;
+                border-top: 1px solid #cccccc;
+                &:first-child{
+                    border-top:0;
+                    margin: 0;
+                    padding: 0;
+                }
+                li{
+                    margin: 0 0 4px;
+                    @include breakpoint($MobileScreen) { margin: 0 0 8px; }
+                    strong{ 
+                        width: 147px;
+                        display: inline-block;
+                        vertical-align: top;
+                        @include breakpoint($smartMobileScreen) { width: 86px; }
+                    }
+                    span{ 
+                        width: calc(100% - 163px);
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-left: 16px;
+                        @include breakpoint($smartMobileScreen) { 
+                            width: calc(100% - 94px);
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+            .available-detail{
+                border-top: 1px solid #cccccc;
+                padding: 18px 0 0;
+                margin-top: 14px;
+                .image-area {
+                    padding: 0 0 23px;
+                }
+                .paragraph{
+                    margin: 0 0 29px;
+                }
+                .features{
+                    margin: 5px 0 0;
+                    padding: 0;
+                    list-style: none;
+                    li{
+                        margin: 0 0 12px;
+                        &:last-child{
+                            margin:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sub-options{
+    padding: 12px 12px 17px 12px;
+    @include breakpoint($MobileScreen) { padding: 12px 0 17px; }
+    display: none;
+    legend{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin: 0 0 12px;
+        @include breakpoint($smartMobileScreen) {
+            margin: 0 0 10px;
+            text-align: center;
+         }
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        @include breakpoint($MobileScreen) { gap:9px }
+        li{
+            display: inline-block;
+            vertical-align: top;
+            &.selection-inner{
+                label{
+                    height: 90px;
+                    width: 90px;
+                    box-sizing: border-box;
+                    padding: 5px;
+                    text-align: center;
+                    border: 2px solid #D9D9D9;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .label-wrapper{ margin-top:12px; }
+                    img{
+                        width: auto;
+                        display: block;
+                        margin: 0 auto 8px;
+                        max-width: 38px;
+                    }
+                    span{
+                        display: block;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #333333;
+                    }
+                }
+                [type=radio]:checked+label{
+                    background: no-repeat;
+                    padding: 3px;
+                    border-color: #0060A9;
+                    box-shadow: inset 0 0 0 2px #0060a9;
+                }
+            }
+        }
+    }
+}

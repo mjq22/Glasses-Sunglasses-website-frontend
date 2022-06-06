@@ -1,0 +1,79 @@
+.favorites{
+    &.fav-empty{
+        .listing-top{
+            h1{
+                @include breakpoint($MobileScreen) { 
+                    margin:0;
+                }
+            }
+        }
+    }
+    .listing-top{
+
+        h1{
+            margin: 0;
+            float: left;
+
+            @include breakpoint($MobileScreen) { 
+                float:none; 
+                margin: 0 0 20px;
+            }
+        }
+
+        .vto{ 
+            padding:0; 
+            border:none;
+        }
+    }
+
+    .fav-area{
+        max-width: 310px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 48px 0 0;
+
+        @include Tabbreakpoint($TabletScreen) {
+            max-width: 224px;
+        }
+
+        @include breakpoint($MobileScreen) { 
+            max-width: inherit;
+        }
+
+        h2{
+            font-size: 22px;
+            line-height: 32px;
+            color: #333;
+            font-weight: 400;
+            margin: 0 0 4px;
+        }
+
+        .sub-title{
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            color: #707070;
+            margin: 0 0 16px;
+        }
+
+        .btn{
+            display: inline-block;
+            vertical-align: top;
+            min-width: 304px;
+            background: #3071A9;
+            text-align: center;
+            color: #fff;
+            border-radius: 3px;
+            text-decoration: none;
+            padding: 8px 5px;
+            margin: 0;
+            transition: 0.2s ease-in all;
+
+            @include Tabbreakpoint($TabletScreen) {
+                min-width: 224px;
+            }
+    
+            &:hover{ background: #296293; }
+        }
+    }
+}

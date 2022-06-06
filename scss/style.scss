@@ -1,0 +1,405 @@
+@import "variable";
+@import "reset";
+@import "standard";
+@import "header";
+@import "home";
+@import "listing";
+@import "fav";
+@import "detail";
+@import "vto";
+@import "account";
+@import "order";
+@import "order-detail";
+@import "presc";
+@import "rx";
+@import "rx-existing-patient";
+@import "rx-capture-pd";
+@import "rx-lens-type";
+@import "rx-cart";
+@import "rx-lens-type-drivewear";
+@import "footer.scss";
+
+body {
+  font-family: $PrimaryFont;
+  background-color: #fff;
+  font-size: $primaryFontsize;
+  line-height: $primaryLineHeight;
+  font-weight: $lightfontweight;
+  color: $PrimaryTextColor;
+  p {
+    font-size: $primaryFontsize;
+  }
+  .row {
+    margin: 0 -16px;
+    @include breakpoint($MobileScreen) {
+      margin: 0px;
+    }
+  }
+  .tbShow {
+    display: none;
+    @include Tabbreakpoint($TabletScreen) {
+      display: block;
+    }
+    @include breakpoint($MobileScreen) {
+      display: none;
+    }
+  }
+  .dsHide {
+    display: none;
+
+    @include Tabbreakpoint($TabletScreen) {
+      display: inline-block;
+    }
+  }
+  .tbHide {
+    @include Tabbreakpoint($TabletScreen) {
+      display: none;
+    }
+    @include breakpoint($MobileScreen) {
+      display: inline-block;
+    }
+  }
+  .mbHide {
+    display: inline-block;
+    @include Tabbreakpoint($TabletScreen) {
+      display: none;
+    }
+    @include breakpoint($MobileScreen) {
+      display: none;
+    }
+  }
+  .container {
+    @include container();
+    @include Tabbreakpoint($TabletScreen) {
+      padding: 0px 16px;
+    }
+  }
+
+  .col-1 {
+    display: inline-block;
+    vertical-align:top;
+    width: 8.33333333%;
+  }
+  .col-2 {
+    display: inline-block;
+    vertical-align:top;
+    width: 16.66666667%;
+  }
+  .col-3 {
+    display: inline-block;
+    vertical-align:top;
+    width: 25%;
+  }
+  .col-4 {
+    display: inline-block;
+    vertical-align:top;
+    width: 33.33%;
+  }
+  .col-5 {
+    display: inline-block;
+    vertical-align:top;
+    width: 41.666667%;
+  }
+  .col-6 {
+    display: inline-block;
+    vertical-align:top;
+    width: 50%;
+  }
+  .col-7 {
+    display: inline-block;
+    vertical-align:top;
+    width: 58.33%;
+  }
+  .col-8 {
+    display: inline-block;
+    vertical-align:top;
+    width: 66.66666667%;
+  }
+  .col-9 {
+    display: inline-block;
+    vertical-align:top;
+    width: 75%;
+  }
+  .col-10 {
+    display: inline-block;
+    vertical-align:top;
+    width: 83.33%;
+  }
+  .col-11 {
+    display: inline-block;
+    vertical-align:top;
+    width: 91.66%;
+  }
+  .col-12 {
+    display: inline-block;
+    vertical-align:top;
+    width: 100%;
+  }
+
+  @include Tabbreakpoint($TabletScreen) {
+    .col-md-1 {
+      width: 8.33333333%;
+    }
+    .col-md-2 {
+      width: 16.66666667%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.666667%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66666667%;
+    }
+    .col-md-9 {
+      width: 75%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    box-sizing: border-box;
+    padding: 0px 16px;
+    margin-right: -4px;
+    @include breakpoint($MobileScreen) {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .mrg-auto {
+    margin: 0px auto;
+    display: block;
+  }
+  .offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .offset-3 {
+    margin-left: 25%;
+  }
+  .offset-4 {
+    margin-left: 33.33%;
+  }
+  .offset-5 {
+    margin-left: 41.666667%;
+  }
+  .offset-6 {
+    margin-left: 50%;
+  }
+  .offset-7 {
+    margin-left: 58.33%;
+  }
+  .offset-8 {
+    margin-left: 65.66666667%;
+  }
+  .offset-9 {
+    margin-left: 75%;
+  }
+  .offset-10 {
+    margin-left: 83.33%;
+  }
+  .offset-11 {
+    margin-left: 91.66%;
+  }
+  .offset-12 {
+    margin-left: 100%;
+  }
+  .offset-right-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-right-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-right-3 {
+    margin-right: 25%;
+  }
+  .offset-right-4 {
+    margin-right: 33.33%;
+  }
+  .offset-right-5 {
+    margin-right: 41.666667%;
+  }
+  .offset-right-6 {
+    margin-right: 50%;
+  }
+  .offset-right-7 {
+    margin-right: 58.33%;
+  }
+  .offset-right-8 {
+    margin-right: 65.66666667%;
+  }
+  .offset-right-9 {
+    margin-right: 75%;
+  }
+  .offset-right-10 {
+    margin-right: 83.33%;
+  }
+  .offset-right-11 {
+    margin-right: 91.66%;
+  }
+  .offset-right-12 {
+    margin-right: 100%;
+  }
+
+  .offset-1,
+  .offset-2,
+  .offset-3,
+  .offset-4,
+  .offset-5,
+  .offset-6,
+  .offset-7,
+  .offset-8,
+  .offset-9,
+  .offset-10,
+  .offset-11,
+  .offset-12 {
+    @include breakpoint($MobileScreen) {
+      margin: 0px;
+    }
+  }
+  a.skip-main,
+  a.skip-secondary,
+  .sr-only {
+    display: block !important;
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+  }
+  a.skip-main:active,
+  a.skip-main:focus,
+  a.skip-secondary:active,
+  a.skip-secondary:focus {
+    display: block !important;
+    background-color: #fff;
+    left: 0;
+    top: 5px;
+    right: 0;
+    width: 169px;
+    overflow: auto;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    text-align: center;
+    z-index: 999;
+    font-size: 16px;
+    color: $PrimaryColor;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto;
+  }
+
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+    &::before {
+      width: 40px;
+      height: 40px;
+      background-size: contain;
+      opacity: 1;
+      color: #333;
+      content: "";
+      display: block;
+    }
+  }
+  .slick-disabled {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+  .slick-prev {
+    left: 0px;
+    &:before {
+      background-image: url(/assets/icon/chevron-left.svg);
+    }
+  }
+
+  .slick-next {
+    right: 0px;
+    &:before {
+      background-image: url(/assets/icon/chevron-right.svg);
+    }
+  }
+  .slick-dots {
+    li {
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        padding: 0;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: 0;
+        background: 0 0;
+        margin: 0px auto;
+        &:before {
+          content: "";
+          background-image: url("/assets/icon/dot-outline.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 1;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+        }
+        &:focus {
+          outline: 5px auto #000;
+        }
+      }
+      &.slick-active {
+        button {
+          &:before {
+            background-image: url("/assets/icon/dot-solid.svg");
+          }
+        }
+      }
+    }
+  }
+}

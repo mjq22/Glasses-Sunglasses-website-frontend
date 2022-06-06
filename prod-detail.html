@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Product Detail Page</title>
+    <meta name="description" content="This is the eye glasses website" />
+    <meta name="author" content="Castco" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <a id="skip-content" href="#headerskip" title="Skip to Main Content" class="skip-main"
+            style="display:none;">Skip to Main Content</a>
+        <div class="top-header">
+            <div class="container">
+                <div class="logo-bk">
+                    <a href="/"><img class="main-logo" src="assets/img/logo_CW.svg" alt=" US homepage" /></a>
+                </div>
+                <div class="middle-block">
+                    <a href="#" id="menu-toggle" class="dsHide" aria-label="Toggle navigation">
+                        <img class="menu-toggle" src="assets/icon/navigation-menu.svg" alt="menu icon" />
+                        <span class="menu-txt">Shop</span>
+                    </a>
+                    <form class="search">
+                        <div class="search-wrapper">
+                            <label for="search-field" class="hide">Search</label>
+                            <input type="text" name="s" placeholder="Search" id="search-field" class="search-field" />
+                            <button type="submit" class="search-button" aria-label="submit search">
+                                <img class="search-icon" src="assets/icon/search-icon.svg" alt="submit search" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <nav aria-label="Your Information" class="right-menu-list">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="https://www..com/join-.html" class="menu-item">
+                                <img class="membership-icon icon dsHide" src="assets/icon/-c-solid.svg"
+                                    alt="Membership Icon" />Memberships</a>
+                        </li>
+                        <li class="mbHide tbHide">
+                            <a href="#" class="menu-item not-login">Sign In / Register</a>
+                            <a href="#" class="menu-item login">My Account</a>
+                        </li>
+                        <li>
+                            <span class="favourite-icon">
+                                <a href="#" aria-label="Your Favorites">
+                                    <img class="favourite-icon icon" src="assets/icon/heart-fill.svg"
+                                        alt="Your Favorites" />
+                                    <span class="dsHide">Favorite</span>
+                                </a>
+                                <span class="count">99</span>
+                            </span>
+                            <span class="menu-cart">
+                                <a href="#">
+                                    <img class="cart-icon icon" src="assets/icon/cart-solid.svg" alt="cart" />
+                                    Cart
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main-menu-wrapper mbHide tbHide">
+            <div class="container">
+                <div class="menu-block">
+                    <nav class="main-menu-nav navbar-nav" aria-label="Main">
+                        <ul class="main-menu">
+                            <li class="dsHide not-login">
+                                <a href="#" class="menu-item">Sign In / Register</a>
+                            </li>
+                            <li class="dsHide login">
+                                <a href="#" class="menu-item">My Account</a>
+                            </li>
+                            <li><a href="#" class="menu-item">Eyeglasses</a></li>
+                            <li><a href="#" class="menu-item">Virtual Try-On</a></li>
+                            <li>
+                                <a href="https://contacts..com/" class="menu-item">Contact Lenses</a>
+                            </li>
+                            <li><a href="#" class="menu-item">Find a Warehouse</a></li>
+                            <li>
+                                <a href="https://www..com/" class="menu-item">.com</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div id="headerskip" class="sr-only" tabindex="-1"></div>
+        <section class="prod-detail-section">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Eyeglasses</a></li>
+                        <li>Oakley Chainlink</li>
+                    </ul>
+                </nav>
+                <div class="prod-main">
+                    <div class="row">
+                        <div class="gallery-area col-7">
+                            <div class="prod-opts">
+                                <span class="badge">For You</span>
+                                <a href="#" title="Add to Favorites" aria-label="Button, add to favorites"
+                                    aria-pressed="true" class="fav active">Favorite</a>
+                            </div>
+
+                            <div class="gallery-main">
+                                <div class="items ditto">
+                                    <!-- <img src="/assets/img/ditto-img.jpg" alt="Ditto"> -->
+                                    <div class="viewer" aria-label="360 View">
+                                        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-001.jpg"
+                                            alt="360 Image 001" class=""><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-002.jpg"
+                                            alt="360 Image 002"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-003.jpg"
+                                            alt="360 Image 003"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-004.jpg"
+                                            alt="360 Image 004"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-005.jpg"
+                                            alt="360 Image 005"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-006.jpg"
+                                            alt="360 Image 006"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-007.jpg"
+                                            alt="360 Image 007"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-008.jpg"
+                                            alt="360 Image 008"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-009.jpg"
+                                            alt="360 Image 009"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-010.jpg"
+                                            alt="360 Image 010"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-011.jpg"
+                                            alt="360 Image 011"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-012.jpg"
+                                            alt="360 Image 012"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-013.jpg"
+                                            alt="360 Image 013"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-014.jpg"
+                                            alt="360 Image 014"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-015.jpg"
+                                            alt="360 Image 015"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-016.jpg"
+                                            alt="360 Image 016"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-017.jpg"
+                                            alt="360 Image 017"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-018.jpg"
+                                            alt="360 Image 018"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-019.jpg"
+                                            alt="360 Image 019"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-020.jpg"
+                                            alt="360 Image 020"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-021.jpg"
+                                            alt="360 Image 021"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-022.jpg"
+                                            alt="360 Image 022"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-023.jpg"
+                                            alt="360 Image 023"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-024.jpg"
+                                            alt="360 Image 024"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-025.jpg"
+                                            alt="360 Image 025"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-026.jpg"
+                                            alt="360 Image 026"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-027.jpg"
+                                            alt="360 Image 027"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-028.jpg"
+                                            alt="360 Image 028"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-029.jpg"
+                                            alt="360 Image 029"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-030.jpg"
+                                            alt="360 Image 030"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-031.jpg"
+                                            alt="360 Image 031"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-032.jpg"
+                                            alt="360 Image 032"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-033.jpg"
+                                            alt="360 Image 033"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-034.jpg"
+                                            alt="360 Image 034"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-035.jpg"
+                                            alt="360 Image 035"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-036.jpg"
+                                            alt="360 Image 036"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-037.jpg"
+                                            alt="360 Image 037"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-038.jpg"
+                                            alt="360 Image 038"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-039.jpg"
+                                            alt="360 Image 039"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-040.jpg"
+                                            alt="360 Image 040"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-041.jpg"
+                                            alt="360 Image 041"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-042.jpg"
+                                            alt="360 Image 042"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-043.jpg"
+                                            alt="360 Image 043"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-044.jpg"
+                                            alt="360 Image 044"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-045.jpg"
+                                            alt="360 Image 045"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-046.jpg"
+                                            alt="360 Image 046"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-047.jpg"
+                                            alt="360 Image 047"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-048.jpg"
+                                            alt="360 Image 048"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-049.jpg"
+                                            alt="360 Image 049"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-050.jpg"
+                                            alt="360 Image 050"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-051.jpg"
+                                            alt="360 Image 051"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-052.jpg"
+                                            alt="360 Image 052"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-053.jpg"
+                                            alt="360 Image 053"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-054.jpg"
+                                            alt="360 Image 054"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-055.jpg"
+                                            alt="360 Image 055"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-056.jpg"
+                                            alt="360 Image 056"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-057.jpg"
+                                            alt="360 Image 057"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-058.jpg"
+                                            alt="360 Image 058"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-059.jpg"
+                                            alt="360 Image 059"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-060.jpg"
+                                            alt="360 Image 060"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-061.jpg"
+                                            alt="360 Image 061"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-062.jpg"
+                                            alt="360 Image 062"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-063.jpg"
+                                            alt="360 Image 063"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-064.jpg"
+                                            alt="360 Image 064"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-065.jpg"
+                                            alt="360 Image 065"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-066.jpg"
+                                            alt="360 Image 066"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-067.jpg"
+                                            alt="360 Image 067"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-068.jpg"
+                                            alt="360 Image 068"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-069.jpg"
+                                            alt="360 Image 069"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-070.jpg"
+                                            alt="360 Image 070"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-071.jpg"
+                                            alt="360 Image 071"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-072.jpg"
+                                            alt="360 Image 072"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-073.jpg"
+                                            alt="360 Image 073"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-074.jpg"
+                                            alt="360 Image 074"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-075.jpg"
+                                            alt="360 Image 075"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-076.jpg"
+                                            alt="360 Image 076"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-077.jpg"
+                                            alt="360 Image 077"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-078.jpg"
+                                            alt="360 Image 078"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-079.jpg"
+                                            alt="360 Image 079"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-080.jpg"
+                                            alt="360 Image 080"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-081.jpg"
+                                            alt="360 Image 081"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-082.jpg"
+                                            alt="360 Image 082"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-083.jpg"
+                                            alt="360 Image 083"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-084.jpg"
+                                            alt="360 Image 084"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-085.jpg"
+                                            alt="360 Image 085"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-086.jpg"
+                                            alt="360 Image 086"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-087.jpg"
+                                            alt="360 Image 087"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-088.jpg"
+                                            alt="360 Image 088"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-089.jpg"
+                                            alt="360 Image 089"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-090.jpg"
+                                            alt="360 Image 090"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-091.jpg"
+                                            alt="360 Image 091"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-092.jpg"
+                                            alt="360 Image 092"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-093.jpg"
+                                            alt="360 Image 093"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-094.jpg"
+                                            alt="360 Image 094"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-095.jpg"
+                                            alt="360 Image 095"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-096.jpg"
+                                            alt="360 Image 096"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-097.jpg"
+                                            alt="360 Image 097"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-098.jpg"
+                                            alt="360 Image 098"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-099.jpg"
+                                            alt="360 Image 099"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-100.jpg"
+                                            alt="360 Image 100"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-101.jpg"
+                                            alt="360 Image 101"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-102.jpg"
+                                            alt="360 Image 102"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-103.jpg"
+                                            alt="360 Image 103"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-104.jpg"
+                                            alt="360 Image 104"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-105.jpg"
+                                            alt="360 Image 105"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-106.jpg"
+                                            alt="360 Image 106"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-107.jpg"
+                                            alt="360 Image 107"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-108.jpg"
+                                            alt="360 Image 108"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-109.jpg"
+                                            alt="360 Image 109"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-110.jpg"
+                                            alt="360 Image 110"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-111.jpg"
+                                            alt="360 Image 111"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-112.jpg"
+                                            alt="360 Image 112"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-113.jpg"
+                                            alt="360 Image 113"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-114.jpg"
+                                            alt="360 Image 114"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-115.jpg"
+                                            alt="360 Image 115"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-116.jpg"
+                                            alt="360 Image 116"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-117.jpg"
+                                            alt="360 Image 117"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-118.jpg"
+                                            alt="360 Image 118"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-119.jpg"
+                                            alt="360 Image 119"><img
+                                            src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-120.jpg"
+                                            alt="360 Image 120" class="active">
+                                    </div>
+                                    <div class="vto-options">
+                                        <a href="#" class="edit-icon">Edit VTO</a>
+                                        <div class="opts">
+                                            <ul>
+                                                <li><a href="#">Retake</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img.jpg" alt="Oakley Chainlink Product Image 1">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img2.jpg" alt="Oakley Chainlink Product Image 2">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img3.jpg" alt="Oakley Chainlink Product Image 3">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img.jpg" alt="Oakley Chainlink Product Image 4">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img2.jpg" alt="Oakley Chainlink Product Image 5">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img3.jpg" alt="Oakley Chainlink Product Image 6">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img.jpg" alt="Oakley Chainlink Product Image 7">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img2.jpg" alt="Oakley Chainlink Product Image 8">
+                                </div>
+                                <div class="items">
+                                    <img src="/assets/img/dummy-img3.jpg" alt="Oakley Chainlink Product Image 9">
+                                </div>
+                            </div>
+                            <a href="#" class="btn try-btn">Try me on</a>
+                            <div class="gallery-thumbs">
+                                <div class="items ditto-thumb" data-slide="0"
+                                    aria-label="Button, launch 360 degree view">
+                                    <a href="javascript:void(0)" class="img-holder">Button, launch 360 degree view</a>
+                                </div>
+                                <div class="items" data-slide="1">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img.jpg" alt="View product Image 1, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="2">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img2.jpg" alt="View product Image 2, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="3">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img3.jpg" alt="View product Image 3, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="4">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img.jpg" alt="View product Image 4, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="5">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img2.jpg" alt="View product Image 5, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="6">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img3.jpg" alt="View product Image 6, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="7">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img.jpg" alt="View product Image 7, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="8">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img2.jpg" alt="View product Image 8, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="items" data-slide="9">
+                                    <figure>
+                                        <a href="javascript:void(0)" class="img-holder">
+                                            <img src="/assets/img/dummy-img3.jpg" alt="View product Image 9, larger">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Gallery Popup -->
+                            <div class="popup gallery-popup large" id="gallery-poupup">
+                                <div class="overlay"></div>
+                                <div class="popup-content">
+                                    <div class="popup-header">
+                                        <a href="#" class="popup-close" aria-label="Button, close">Button, close</a>
+                                    </div>
+                                    <div class="content-holder">
+                                        <div class="gallery-popup-main">
+                                            <div class="items ditto">
+                                                <div class="pan">
+                                                    <!-- <a href="#" class="zoom-icon">Zoom</a> -->
+                                                    <!-- <a href="#" class="pan-arrow up">Pan Up</a> -->
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <!-- <a href="#" class="pan-arrow down">Pan Down</a> -->
+
+                                                </div>
+                                                <div class="viewer" aria-label="360 View">
+                                                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-001.jpg"
+                                                        alt="360 Image 001" class=""><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-002.jpg"
+                                                        alt="360 Image 002"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-003.jpg"
+                                                        alt="360 Image 003"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-004.jpg"
+                                                        alt="360 Image 004"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-005.jpg"
+                                                        alt="360 Image 005"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-006.jpg"
+                                                        alt="360 Image 006"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-007.jpg"
+                                                        alt="360 Image 007"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-008.jpg"
+                                                        alt="360 Image 008"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-009.jpg"
+                                                        alt="360 Image 009"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-010.jpg"
+                                                        alt="360 Image 010"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-011.jpg"
+                                                        alt="360 Image 011"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-012.jpg"
+                                                        alt="360 Image 012"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-013.jpg"
+                                                        alt="360 Image 013"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-014.jpg"
+                                                        alt="360 Image 014"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-015.jpg"
+                                                        alt="360 Image 015"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-016.jpg"
+                                                        alt="360 Image 016"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-017.jpg"
+                                                        alt="360 Image 017"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-018.jpg"
+                                                        alt="360 Image 018"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-019.jpg"
+                                                        alt="360 Image 019"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-020.jpg"
+                                                        alt="360 Image 020"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-021.jpg"
+                                                        alt="360 Image 021"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-022.jpg"
+                                                        alt="360 Image 022"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-023.jpg"
+                                                        alt="360 Image 023"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-024.jpg"
+                                                        alt="360 Image 024"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-025.jpg"
+                                                        alt="360 Image 025"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-026.jpg"
+                                                        alt="360 Image 026"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-027.jpg"
+                                                        alt="360 Image 027"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-028.jpg"
+                                                        alt="360 Image 028"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-029.jpg"
+                                                        alt="360 Image 029"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-030.jpg"
+                                                        alt="360 Image 030"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-031.jpg"
+                                                        alt="360 Image 031"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-032.jpg"
+                                                        alt="360 Image 032"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-033.jpg"
+                                                        alt="360 Image 033"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-034.jpg"
+                                                        alt="360 Image 034"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-035.jpg"
+                                                        alt="360 Image 035"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-036.jpg"
+                                                        alt="360 Image 036"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-037.jpg"
+                                                        alt="360 Image 037"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-038.jpg"
+                                                        alt="360 Image 038"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-039.jpg"
+                                                        alt="360 Image 039"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-040.jpg"
+                                                        alt="360 Image 040"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-041.jpg"
+                                                        alt="360 Image 041"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-042.jpg"
+                                                        alt="360 Image 042"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-043.jpg"
+                                                        alt="360 Image 043"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-044.jpg"
+                                                        alt="360 Image 044"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-045.jpg"
+                                                        alt="360 Image 045"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-046.jpg"
+                                                        alt="360 Image 046"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-047.jpg"
+                                                        alt="360 Image 047"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-048.jpg"
+                                                        alt="360 Image 048"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-049.jpg"
+                                                        alt="360 Image 049"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-050.jpg"
+                                                        alt="360 Image 050"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-051.jpg"
+                                                        alt="360 Image 051"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-052.jpg"
+                                                        alt="360 Image 052"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-053.jpg"
+                                                        alt="360 Image 053"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-054.jpg"
+                                                        alt="360 Image 054"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-055.jpg"
+                                                        alt="360 Image 055"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-056.jpg"
+                                                        alt="360 Image 056"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-057.jpg"
+                                                        alt="360 Image 057"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-058.jpg"
+                                                        alt="360 Image 058"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-059.jpg"
+                                                        alt="360 Image 059"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-060.jpg"
+                                                        alt="360 Image 060"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-061.jpg"
+                                                        alt="360 Image 061"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-062.jpg"
+                                                        alt="360 Image 062"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-063.jpg"
+                                                        alt="360 Image 063"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-064.jpg"
+                                                        alt="360 Image 064"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-065.jpg"
+                                                        alt="360 Image 065"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-066.jpg"
+                                                        alt="360 Image 066"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-067.jpg"
+                                                        alt="360 Image 067"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-068.jpg"
+                                                        alt="360 Image 068"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-069.jpg"
+                                                        alt="360 Image 069"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-070.jpg"
+                                                        alt="360 Image 070"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-071.jpg"
+                                                        alt="360 Image 071"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-072.jpg"
+                                                        alt="360 Image 072"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-073.jpg"
+                                                        alt="360 Image 073"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-074.jpg"
+                                                        alt="360 Image 074"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-075.jpg"
+                                                        alt="360 Image 075"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-076.jpg"
+                                                        alt="360 Image 076"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-077.jpg"
+                                                        alt="360 Image 077"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-078.jpg"
+                                                        alt="360 Image 078"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-079.jpg"
+                                                        alt="360 Image 079"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-080.jpg"
+                                                        alt="360 Image 080"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-081.jpg"
+                                                        alt="360 Image 081"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-082.jpg"
+                                                        alt="360 Image 082"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-083.jpg"
+                                                        alt="360 Image 083"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-084.jpg"
+                                                        alt="360 Image 084"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-085.jpg"
+                                                        alt="360 Image 085"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-086.jpg"
+                                                        alt="360 Image 086"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-087.jpg"
+                                                        alt="360 Image 087"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-088.jpg"
+                                                        alt="360 Image 088"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-089.jpg"
+                                                        alt="360 Image 089"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-090.jpg"
+                                                        alt="360 Image 090"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-091.jpg"
+                                                        alt="360 Image 091"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-092.jpg"
+                                                        alt="360 Image 092"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-093.jpg"
+                                                        alt="360 Image 093"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-094.jpg"
+                                                        alt="360 Image 094"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-095.jpg"
+                                                        alt="360 Image 095"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-096.jpg"
+                                                        alt="360 Image 096"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-097.jpg"
+                                                        alt="360 Image 097"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-098.jpg"
+                                                        alt="360 Image 098"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-099.jpg"
+                                                        alt="360 Image 099"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-100.jpg"
+                                                        alt="360 Image 100"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-101.jpg"
+                                                        alt="360 Image 101"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-102.jpg"
+                                                        alt="360 Image 102"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-103.jpg"
+                                                        alt="360 Image 103"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-104.jpg"
+                                                        alt="360 Image 104"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-105.jpg"
+                                                        alt="360 Image 105"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-106.jpg"
+                                                        alt="360 Image 106"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-107.jpg"
+                                                        alt="360 Image 107"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-108.jpg"
+                                                        alt="360 Image 108"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-109.jpg"
+                                                        alt="360 Image 109"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-110.jpg"
+                                                        alt="360 Image 110"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-111.jpg"
+                                                        alt="360 Image 111"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-112.jpg"
+                                                        alt="360 Image 112"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-113.jpg"
+                                                        alt="360 Image 113"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-114.jpg"
+                                                        alt="360 Image 114"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-115.jpg"
+                                                        alt="360 Image 115"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-116.jpg"
+                                                        alt="360 Image 116"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-117.jpg"
+                                                        alt="360 Image 117"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-118.jpg"
+                                                        alt="360 Image 118"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-119.jpg"
+                                                        alt="360 Image 119"><img
+                                                        src="//s3-us-west-2.amazonaws.com/s.cdpn.io/68939/360-120.jpg"
+                                                        alt="360 Image 120" class="active">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img2.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                            <div class="items">
+                                                <div class="pan">
+                                                    <a href="#" class="zoom-icon">Zoom</a>
+                                                    <a href="#" class="pan-arrow up">Pan Up</a>
+                                                    <a href="#" class="pan-arrow right">Pan Right</a>
+                                                    <a href="#" class="pan-arrow down">Pan Down</a>
+                                                    <a href="#" class="pan-arrow left">Pan Left</a>
+                                                </div>
+                                                <div class="zoom">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="img" alt="Frame">
+                                                    <img src="/assets/img/dummy-img3.jpg" class="zoom-img" alt="Frame">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slide-count"><span class="curr-count">1</span> of <span
+                                                class="total-count">54</span> images</div>
+                                        <div class="gallery-popup-thumbs" draggable="true" tabindex="0">
+                                            <div class="items ditto-thumb" data-slide="0">
+                                                <a href="javascript:void(0)" class="img-holder">Ditto</a>
+                                            </div>
+                                            <div class="items" data-slide="1">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img.jpg"
+                                                            alt="View product Image 1, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="2">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img2.jpg"
+                                                            alt="View product Image 2, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="3">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img3.jpg"
+                                                            alt="View product Image 3, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="4">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img.jpg"
+                                                            alt="View product Image 4, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="5">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img2.jpg"
+                                                            alt="View product Image 5, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="6">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img3.jpg"
+                                                            alt="View product Image 6, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="7">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img.jpg"
+                                                            alt="View product Image 7, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="8">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img2.jpg"
+                                                            alt="View product Image 8, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="9">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img3.jpg"
+                                                            alt="View product Image 9, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="10">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img.jpg"
+                                                            alt="View product Image 10, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="11">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img2.jpg"
+                                                            alt="View product Image 11, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                            <div class="items" data-slide="12">
+                                                <figure>
+                                                    <a href="javascript:void(0)" class="img-holder">
+                                                        <img src="/assets/img/dummy-img3.jpg"
+                                                            alt="View product Image 12, larger">
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-area col-5">
+                            <h1>Oakley Chainlink</h1>
+                            <div class="color-opts">
+                                <span class="selected-color">Dark Sienna</span>
+                                <ul>
+                                    <li class="active">
+                                        <button title="Dark Sienna" aria-label="Dark Sienna, button, selected"
+                                            data-color="dark-sienna" type="button">Dark
+                                            Sienna</button>
+                                    </li>
+                                    <li>
+                                        <button title="Brown" aria-label="Brown, button"
+                                            data-color="brown">Brown</button>
+                                    </li>
+                                    <li>
+                                        <button title="Grey" aria-label="Grey, button" data-color="grey">Grey</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <span class="price">$59.99</span>
+                            <span class="note">Shipping &amp; Handling Included*</span>
+                            <div class="feat">
+                                <h2>Frame Features</h2>
+                                <ul>
+                                    <li>- Metal Frame</li>
+                                    <li>- Butterfly Shape</li>
+                                    <li>- Semi-Rimless Design</li>
+                                </ul>
+                            </div>
+                            <div class="variation-area">
+                                <!-- <div class="variation">
+                                    <span class="var-selected"><strong>Fit:</strong> <span
+                                            class="fit-size">Small</span></span>
+                                    <ul class="var-list">
+                                        <li class="active">
+                                            <a data-fit="small" data-size="50 - 19 - 140" data-nose="19mm"
+                                                data-lens="50mm" data-arm="140mm" href="#">Small</a>
+                                        </li>
+                                        <li>
+                                            <a data-fit="medium" data-size="55 - 22 - 145" data-nose="22mm"
+                                                data-lens="55mm" data-arm="145mm" href="#">Medium</a>
+                                        </li>
+                                        <li>
+                                            <a data-fit="large" data-size="60 - 24 - 150" data-nose="24mm"
+                                                data-lens="60mm" data-arm="150mm" href="#">Large</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                <div class="variation">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <legend class="var-selected"><strong>Fit:</strong> <span
+                                                    class="fit-size">Small</span></legend>
+                                            <ul class="var-list">
+                                                <li class="active">
+                                                    <input type="radio" name="size-var" value="small" id="small">
+                                                    <label data-fit="small" data-size="50 - 19 - 140" data-nose="19mm"
+                                                        data-lens="50mm" data-arm="140mm" for="small"
+                                                        aria-label="grouping, fit, small radio button checked">Small</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="size-var" value="medium" id="medium">
+                                                    <label data-fit="medium" data-size="55 - 22 - 145" data-nose="22mm"
+                                                        data-lens="55mm" data-arm="145mm" for="medium"
+                                                        aria-label="grouping, fit, medium radio button">Medium</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="size-var" value="large" id="large">
+                                                    <label data-fit="large" data-size="60 - 24 - 150" data-nose="24mm"
+                                                        data-lens="60mm" data-arm="150mm" for="large"
+                                                        aria-label="grouping, fit, large radio button">Large</label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <a href="#" class="size-link popup-link" data-popup="size-poupup">Size Guide</a>
+                                <div class="popup size-popup" id="size-poupup">
+                                    <div class="overlay"></div>
+                                    <div class="popup-content">
+                                        <div class="popup-header">
+                                            <h3>Size Guide</h3>
+                                            <a href="#" class="popup-close">close</a>
+                                        </div>
+                                        <div class="content-holder">
+                                            <div class="size-guide" tabindex="0"
+                                                aria-label="50-19-140, nose bridge 19mm, lens width 50mm, arm length 140mm">
+                                                <span class="size-title"><strong>Size Guide</strong> <span
+                                                        class="size-val">50 - 19 -
+                                                        140</span></span>
+                                                <div class="size-imgs">
+                                                    <div class="frame-size">
+                                                        <span class="nose-txt">Nose Bridge
+                                                            <span>19mm</span></span>
+                                                        <span class="lens-txt"><span>50mm</span> Lens
+                                                            Width</span>
+                                                        <img src="/assets/img/img-size-frame.jpg" alt="Frame Size">
+                                                    </div>
+                                                    <div class="arm-size">
+                                                        <span class="arm-txt">Arm Length
+                                                            <span>140mm</span></span>
+                                                        <img src="/assets/img/img-size-arm.jpg" alt="Arm Size">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-footer">
+                                            <a href="#" class="btn btn-close">Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">Choose Options and Buy</a>
+                            <span class="delivery">Estimated delivery time will be approximately 7-10 business <br> days
+                                from
+                                the time of order.</span>
+                            <div class="share" aria-expanded="false">
+                                <a href="#" class="txt">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="share-square"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                        class="svg-inline--fa fa-share-square fa-w-18 fa-2x">
+                                        <path fill="currentColor"
+                                            d="M561.938 158.06L417.94 14.092C387.926-15.922 336 5.097 336 48.032v57.198c-42.45 1.88-84.03 6.55-120.76 17.99-35.17 10.95-63.07 27.58-82.91 49.42C108.22 199.2 96 232.6 96 271.94c0 61.697 33.178 112.455 84.87 144.76 37.546 23.508 85.248-12.651 71.02-55.74-15.515-47.119-17.156-70.923 84.11-78.76V336c0 42.993 51.968 63.913 81.94 33.94l143.998-144c18.75-18.74 18.75-49.14 0-67.88zM384 336V232.16C255.309 234.082 166.492 255.35 206.31 376 176.79 357.55 144 324.08 144 271.94c0-109.334 129.14-118.947 240-119.85V48l144 144-144 144zm24.74 84.493a82.658 82.658 0 0 0 20.974-9.303c7.976-4.952 18.286.826 18.286 10.214V464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h132c6.627 0 12 5.373 12 12v4.486c0 4.917-2.987 9.369-7.569 11.152-13.702 5.331-26.396 11.537-38.05 18.585a12.138 12.138 0 0 1-6.28 1.777H54a6 6 0 0 0-6 6v340a6 6 0 0 0 6 6h340a6 6 0 0 0 6-6v-25.966c0-5.37 3.579-10.059 8.74-11.541z"
+                                            class=""></path>
+                                    </svg>
+                                    Share Your Style
+                                </a>
+                                <ul>
+                                    <li><a aria-label="Share to Facebook" href="#"><img src="/assets/icon/facebook.svg"
+                                                alt="Facebook"></a></li>
+                                    <li><a aria-label="Share to Pinterest" href="#"><img
+                                                src="/assets/icon/pinterest.svg" alt="Pinterest"></a></li>
+                                    <li><a aria-label="Share to Twitter" href="#"><img src="/assets/icon/twitter.svg"
+                                                alt="Twitter"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-tabs">
+                    <ul class="tab-list">
+                        <li class="active"><a href="#desc">Description</a></li>
+                        <li><a href="#spec">Specifications</a></li>
+                        <li><a href="#ship">Shipping</a></li>
+                        <li><a href="#return">Returns and Adjustments</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab" id="desc">
+                            <h3>Description</h3>
+                            <div class="row">
+                                <div class="col-6 col-md-12">
+                                    <p>Long description of the frames go here. It will be controlled and defined as
+                                        needed by  Optical.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab" id="spec">
+                            <h3>Specifications</h3>
+                            <div class="row">
+                                <div class="col-4 col-md-5">
+                                    <ul class="spec-list">
+                                        <li class="spec-size">
+                                            <span class="title">Size</span>
+                                            <span class="val">50 - 19 - 140</span>
+                                        </li>
+                                        <li class="spec-fit">
+                                            <span class="title">Fit</span>
+                                            <span class="val">Medium</span>
+                                        </li>
+                                        <li class="spec-color">
+                                            <span class="title">Color</span>
+                                            <span class="val">Silver Fox</span>
+                                        </li>
+                                        <li class="spec-material">
+                                            <span class="title">Material</span>
+                                            <span class="val">Acetate, Metal</span>
+                                        </li>
+                                        <li class="spec-rim">
+                                            <span class="title">Rim Type</span>
+                                            <span class="val">Full Rim</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-8 col-md-7">
+                                    <div class="size-guide">
+                                        <span class="size-title"><strong>Size Guide</strong> <span class="size-val">50 -
+                                                19 - 140</span></span>
+                                        <div class="size-imgs">
+                                            <div class="frame-size">
+                                                <span class="nose-txt">Nose Bridge <span>19mm</span></span>
+                                                <span class="lens-txt"><span>50mm</span> Lens Width</span>
+                                                <img src="/assets/img/img-size-frame.jpg" alt="Frame Size">
+                                            </div>
+                                            <div class="arm-size">
+                                                <span class="arm-txt">Arm Length <span>140mm</span></span>
+                                                <img src="/assets/img/img-size-arm.jpg" alt="Arm Size">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab" id="ship">
+                            <h3>Shipping</h3>
+                            <div class="row">
+                                <div class="col-6 col-md-12">
+                                    <p>Standard shipping via UPS Ground is included in the quoted price.</p>
+                                    <p><strong>*Delivery is available to Alaska, Hawaii and Puerto Rico - Additional
+                                            Shipping and Handling fee applies.</strong> This fee will be quoted at
+                                        checkout. Additional transit time may also be required.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab" id="return">
+                            <h3>Returns and Adjustments</h3>
+                            <div class="row">
+                                <div class="col-6 col-md-12">
+                                    <p>Have a question or concern with your new eyeglasses? Visit  Optical for
+                                        adjustments or returns. Eyeglasses with custom-made lenses cannot be returned
+                                        online through .com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-like">
+                    <h3>You might also like</h3>
+                    <div class="prod-list">
+                        <div class="prod-item">
+                            <div class="item-top">
+
+                                <a href="#" class="fav active">Favorite</a>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/img/frame1.png" alt="Luxreaders Product Image">
+                                </a>
+                            </figure>
+                            <h2><a href="#">Luxreaders</a></h2>
+                            <ul class="color-dots">
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                            </ul>
+                            <span aria-label="Price $49.99" class="price">$49.99</span>
+                        </div>
+                        <div class="prod-item">
+                            <div class="item-top">
+
+                                <a href="#" class="fav active">Favorite</a>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/img/frame1.png" alt="Luxreaders Product Image">
+                                </a>
+                            </figure>
+                            <h2><a href="#">Luxreaders</a></h2>
+                            <ul class="color-dots">
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                            </ul>
+                            <span aria-label="Price $49.99" class="price">$49.99</span>
+                        </div>
+                        <div class="prod-item">
+                            <div class="item-top">
+
+                                <a href="#" class="fav active">Favorite</a>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/img/frame1.png" alt="Luxreaders Product Image">
+                                </a>
+                            </figure>
+                            <h2><a href="#">Luxreaders</a></h2>
+                            <ul class="color-dots">
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                            </ul>
+                            <span aria-label="Price $49.99" class="price">$49.99</span>
+                        </div>
+                        <div class="prod-item">
+                            <div class="item-top">
+
+                                <a href="#" class="fav active">Favorite</a>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/img/frame1.png" alt="Luxreaders Product Image">
+                                </a>
+                            </figure>
+                            <h2><a href="#">Luxreaders</a></h2>
+                            <ul class="color-dots">
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                            </ul>
+                            <span aria-label="Price $49.99" class="price">$49.99</span>
+                        </div>
+                        <div class="prod-item">
+                            <div class="item-top">
+
+                                <a href="#" class="fav active">Favorite</a>
+                            </div>
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/img/frame1.png" alt="Luxreaders Product Image">
+                                </a>
+                            </figure>
+                            <h2><a href="#">Luxreaders</a></h2>
+                            <ul class="color-dots">
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li class="active"><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                                <li><button type="button" data-color="brown">Brown</button></li>
+                                <li><button type="button" data-color="grey">Grey</button></li>
+                                <li><button type="button" data-color="black">Black</button></li>
+                                <li><button type="button" data-color="olive">Olive</button></li>
+                            </ul>
+                            <span aria-label="Price $49.99" class="price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://www..com/about.html">About Us</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="http://www..com/membership-information.html">Company Information</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/terms-and-conditions-of-use.html">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://www..com/membership-information.html">Membership</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="http://www..com/join-.html">Join Now</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/member-privileges-conditions.html">Member Privileges</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/privacy-policy.html">Your Privacy Rights</a>
+                    </li>
+                    <li>
+                        <a href="http://www..com/DNSMIView">Do Not Sell My Personal Information</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www..com/wcsstore/USBCCatalogAssetStore/rx/pharmacy-privacy-practice.pdf">Privacy
+                            Information</a>
+                    </li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="widget-col col-4">
+                <h4 class="widget-title">
+                    <a href="https://customerservice..com/">Customer Service</a>
+                </h4>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="https://customerservice..com/app/answers/list/p/281">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="https://customerservice..com/app/answers/detail/a_id/1191">Returns</a>
+                    </li>
+                    <li>
+                        <a href="https://customerservice..com/app/answers/detail/c/10/a_id/9">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="container">
+                <hr />
+                <p class="copyright-text text-center">
+                    © 1998 — 2021  Wholesale Corporation. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
+        integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/impetus@0.8.8/dist/impetus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
